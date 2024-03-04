@@ -283,6 +283,10 @@
 .secundarias-dos {
   background-color: #14141b;
   padding: 160px 200px 10px 200px; }
+  .secundarias-dos h1 {
+    color: white;
+    text-align: center;
+    padding: 10px; }
   .secundarias-dos p {
     color: white;
     font-size: 20px; }
@@ -497,6 +501,10 @@
 .analisis-texto {
   background-color: #14141b;
   padding: 160px 200px 30px 200px; }
+  .analisis-texto h1 {
+    color: white;
+    text-align: center;
+    padding: 10px; }
   .analisis-texto p {
     color: white;
     font-size: 20px; }
@@ -525,6 +533,10 @@
 .videos-texto {
   background-color: #14141b;
   padding: 160px 200px 30px 200px; }
+  .videos-texto h1 {
+    color: white;
+    text-align: center;
+    padding: 10px; }
   .videos-texto p {
     color: white;
     font-size: 20px; }
@@ -609,6 +621,10 @@
 .generos-texto {
   background-color: #14141b;
   padding: 160px 200px 30px 200px; }
+  .generos-texto h1 {
+    color: white;
+    text-align: center;
+    padding: 10px; }
   .generos-texto p {
     color: white;
     font-size: 20px; }
@@ -769,7 +785,7 @@
 .nosotros-somos {
   background-color: #14141b;
   padding: 160px 200px 30px 200px; }
-  .nosotros-somos h2 {
+  .nosotros-somos h1 {
     background-color: #14141b;
     padding: 15px;
     text-align: center;
