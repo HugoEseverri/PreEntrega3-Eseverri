@@ -79,7 +79,9 @@
   gap: 20px;
   grid-template-areas: "noticia-1 noticia-2 noticia-5 noticia-7" "noticia-3 noticia-4 noticia-6 noticia-7";
   align-items: baseline; }
-  .container-1 div h6 {
+  .container-1 div a:hover {
+    color: #ffffff79; }
+  .container-1 div a h6 {
     padding-top: 15px; }
 
 .noticia-1 {
@@ -147,6 +149,8 @@
     list-style: none;
     color: white;
     font-size: 30px; }
+    .titulo-dos a:hover {
+      color: #e90f0fab; }
 
 .videos {
   background-color: #14141b;
@@ -180,6 +184,8 @@
   justify-items: center;
   align-items: center;
   padding: 10px 100px 30px 100px; }
+  .container-2 div a:hover {
+    color: #ffffff79; }
   .container-2 div a img {
     padding: 10px;
     width: 350px; }
