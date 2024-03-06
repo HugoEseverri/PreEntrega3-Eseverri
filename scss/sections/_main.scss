@@ -18,21 +18,24 @@
     padding: 30px;
     background-color: black;
     text-align: center;
+    
+}
 
-    a {
-        text-decoration: none;
-        list-style: none;
-        color: white;
-        font-size: 30px;
+a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 30px;
+    transform: scale(1.05);
 
-        &:hover {
-            color: $rojizo;
-        }
+    &:hover {
+        color: $rojizo;
     }
 }
 
+
 .secundarias {
-    background-image:linear-gradient(black, #0e0e0f );
+    background-image: linear-gradient(black, #0e0e0f);
     display: flex;
     padding: 30px;
     justify-content: space-between;
@@ -166,7 +169,7 @@
 }
 
 .videos {
-    background-image:linear-gradient(#14141b, rgb(10, 10, 10) );
+    background-image: linear-gradient(#14141b, rgb(10, 10, 10));
     display: flex;
     justify-content: space-evenly;
     padding: 0 15px 30px 15px;
@@ -193,7 +196,7 @@
 /*!-------index-n-random------*/
 
 .terciarias {
-    background-image:linear-gradient(black, #0e0e0f );
+    background-image: linear-gradient(black, #0e0e0f);
 
     a {
         text-decoration: none;
@@ -288,7 +291,7 @@
 }
 
 .analisis-juegos {
-    background-image:linear-gradient(#14141b, rgb(10, 10, 10) );
+    background-image: linear-gradient(#14141b, rgb(10, 10, 10));
 
     div {
         padding: 15px;
@@ -784,7 +787,7 @@
         background-color: rgba(0, 0, 0, 0.295);
         @extend .columna;
         justify-content: space-around;
-        
+
 
         a {
             text-decoration: none;

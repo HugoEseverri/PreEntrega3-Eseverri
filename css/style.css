@@ -78,13 +78,15 @@
   padding: 30px;
   background-color: black;
   text-align: center; }
-  .titulo a {
-    text-decoration: none;
-    list-style: none;
-    color: white;
-    font-size: 30px; }
-    .titulo a:hover {
-      color: #e90f0fab; }
+
+a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  font-size: 30px;
+  transform: scale(1.05); }
+  a:hover {
+    color: #e90f0fab; }
 
 .secundarias {
   background-image: linear-gradient(black, #0e0e0f);
