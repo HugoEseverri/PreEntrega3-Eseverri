@@ -24,7 +24,7 @@
         font-size: 30px;
 
         &:hover {
-            color: #e90f0fab;
+            color: $rojizo;
         }
     }
 }
@@ -158,7 +158,7 @@
         font-size: 30px;
 
         &:hover {
-            color: #e90f0fab;
+            color: $rojizo;
         }
     }
 }
@@ -232,58 +232,42 @@
 
 .noticiarandom-1 {
     grid-area: noticiarandom-1;
-    width: 355px;
-    border-radius: 6px;
-    background-color: #14141bab;
+    @extend .random
 }
 
 .noticiarandom-2 {
     grid-area: noticiarandom-2;
-    width: 355px;
-    border-radius: 6px;
-    background-color: #14141bab;
+    @extend .random
 }
 
 .noticiarandom-3 {
     grid-area: noticiarandom-3;
-    width: 355px;
-    border-radius: 6px;
-    background-color: #14141bab;
+    @extend .random
 }
 
 .noticiarandom-4 {
     grid-area: noticiarandom-4;
-    width: 355px;
-    border-radius: 6px;
-    background-color: #14141bab;
+    @extend .random
 }
 
 .noticiarandom-5 {
     grid-area: noticiarandom-5;
-    width: 355px;
-    border-radius: 6px;
-    background-color: #14141bab;
+    @extend .random
 }
 
 .noticiarandom-6 {
     grid-area: noticiarandom-6;
-    width: 355px;
-    border-radius: 6px;
-    background-color: #14141bab;
+    @extend .random
 }
 
 .noticiarandom-7 {
     grid-area: noticiarandom-7;
-    width: 355px;
-    border-radius: 6px;
-    background-color: #14141bab;
+    @extend .random
 }
 
 .noticiarandom-8 {
     grid-area: noticiarandom-8;
-    width: 355px;
-    border-radius: 6px;
-    background-color: #14141bab;
+    @extend .random
 }
 
 /*!-------index-análisis------*/
@@ -673,9 +657,7 @@
 }
 
 .contenedor {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend .columna;
 
 }
 
@@ -1481,9 +1463,7 @@
     }
 
     .noticiathelastofus-dos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @extend .columna;
 
         img {
             width: 700px;
@@ -1492,9 +1472,7 @@
 
     .contenedor div {
         width: 900px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @extend .columna;
     }
 }
 

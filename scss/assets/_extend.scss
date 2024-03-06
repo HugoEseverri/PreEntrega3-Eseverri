@@ -1,0 +1,24 @@
+.decoration {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.align {
+    text-align: center;
+    color: white;
+    list-style: none;
+}
+
+
+.columna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.random {
+    width: 355px;
+    border-radius: 6px;
+    background-color: #14141bab;
+}
