@@ -2,7 +2,9 @@
 
 
 .color-fondo-uno {
-    background-color: $gris;
+    background-image: linear-gradient(rgb(31, 30, 30), $gris, $negro-carousel);
+
+    // background-color: $gris;
 }
 
 .posicion {
@@ -30,7 +32,7 @@
 }
 
 .secundarias {
-    background-color: black;
+    background-image:linear-gradient(black, #0e0e0f );
     display: flex;
     padding: 30px;
     justify-content: space-between;
@@ -164,7 +166,7 @@
 }
 
 .videos {
-    background-color: $gris;
+    background-image:linear-gradient(#14141b, rgb(10, 10, 10) );
     display: flex;
     justify-content: space-evenly;
     padding: 0 15px 30px 15px;
@@ -191,7 +193,7 @@
 /*!-------index-n-random------*/
 
 .terciarias {
-    background-color: black;
+    background-image:linear-gradient(black, #0e0e0f );
 
     a {
         text-decoration: none;
@@ -215,7 +217,7 @@
     div {
         a {
             &:hover {
-                color: #ffffff79;
+                color: #ffffff93;
             }
 
             img {
@@ -286,7 +288,7 @@
 }
 
 .analisis-juegos {
-    background-color: $gris;
+    background-image:linear-gradient(#14141b, rgb(10, 10, 10) );
 
     div {
         padding: 15px;
@@ -330,63 +332,63 @@
     grid-area: analisis-1;
     width: 335px;
     border-radius: 6px;
-    background-color: rgba(0, 0, 0, 0.527);
+    background-color: $negro-fondo;
 }
 
 .analisis-2 {
     grid-area: analisis-2;
     width: 335px;
     border-radius: 6px;
-    background-color: rgba(0, 0, 0, 0.527)
+    background-color: $negro-fondo;
 }
 
 .analisis-3 {
     grid-area: analisis-3;
     width: 335px;
     border-radius: 6px;
-    background-color: rgba(0, 0, 0, 0.527)
+    background-color: $negro-fondo;
 }
 
 .analisis-4 {
     grid-area: analisis-4;
     width: 335px;
     border-radius: 6px;
-    background-color: rgba(0, 0, 0, 0.527)
+    background-color: $negro-fondo;
 }
 
 .analisis-5 {
     grid-area: analisis-5;
     width: 335px;
     border-radius: 6px;
-    background-color: rgba(0, 0, 0, 0.527)
+    background-color: $negro-fondo;
 }
 
 .analisis-6 {
     grid-area: analisis-6;
     width: 335px;
     border-radius: 6px;
-    background-color: rgba(0, 0, 0, 0.527)
+    background-color: $negro-fondo;
 }
 
 .analisis-7 {
     grid-area: analisis-7;
     width: 335px;
     border-radius: 6px;
-    background-color: rgba(0, 0, 0, 0.527)
+    background-color: $negro-fondo;
 }
 
 .analisis-8 {
     grid-area: analisis-8;
     width: 335px;
     border-radius: 6px;
-    background-color: rgba(0, 0, 0, 0.527)
+    background-color: $negro-fondo;
 }
 
 .analisis-9 {
     grid-area: analisis-9;
     width: 335px;
     border-radius: 6px;
-    background-color: rgba(0, 0, 0, 0.527)
+    background-color: $negro-fondo;
 }
 
 

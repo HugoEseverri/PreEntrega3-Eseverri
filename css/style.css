@@ -34,6 +34,9 @@
 .navbar-a-la-derecha {
   justify-content: flex-end; }
 
+.fixed-top {
+  background-image: linear-gradient(#0f0f0f, #050505); }
+
 /*!-----@media---index-----*/
 @media (max-width: 1275px) {
   .w-60 {
@@ -64,7 +67,7 @@
 
 /*!-----------main-carousel----------*/
 .color-fondo-uno {
-  background-color: #14141b; }
+  background-image: linear-gradient(#1f1e1e, #14141b, #050505); }
 
 .posicion {
   padding: 120px 0 10px 0; }
@@ -84,7 +87,7 @@
       color: #e90f0fab; }
 
 .secundarias {
-  background-color: black;
+  background-image: linear-gradient(black, #0e0e0f);
   display: flex;
   padding: 30px;
   justify-content: space-between; }
@@ -178,7 +181,7 @@
       color: #e90f0fab; }
 
 .videos {
-  background-color: #14141b;
+  background-image: linear-gradient(#14141b, #0a0a0a);
   display: flex;
   justify-content: space-evenly;
   padding: 0 15px 30px 15px; }
@@ -196,7 +199,7 @@
 
 /*!-------index-n-random------*/
 .terciarias {
-  background-color: black; }
+  background-image: linear-gradient(black, #0e0e0f); }
   .terciarias a {
     text-decoration: none;
     list-style: none;
@@ -212,7 +215,7 @@
   align-items: center;
   padding: 10px 100px 30px 100px; }
   .container-2 div a:hover {
-    color: #ffffff79; }
+    color: #ffffff93; }
   .container-2 div a img {
     padding: 10px;
     width: 350px; }
@@ -255,7 +258,7 @@
     color: white; }
 
 .analisis-juegos {
-  background-color: #14141b; }
+  background-image: linear-gradient(#14141b, #0a0a0a); }
   .analisis-juegos div {
     padding: 15px; }
   .analisis-juegos a {
@@ -280,55 +283,55 @@
   grid-area: analisis-1;
   width: 335px;
   border-radius: 6px;
-  background-color: rgba(0, 0, 0, 0.527); }
+  background-color: rgba(0, 0, 0, 0.87); }
 
 .analisis-2 {
   grid-area: analisis-2;
   width: 335px;
   border-radius: 6px;
-  background-color: rgba(0, 0, 0, 0.527); }
+  background-color: rgba(0, 0, 0, 0.87); }
 
 .analisis-3 {
   grid-area: analisis-3;
   width: 335px;
   border-radius: 6px;
-  background-color: rgba(0, 0, 0, 0.527); }
+  background-color: rgba(0, 0, 0, 0.87); }
 
 .analisis-4 {
   grid-area: analisis-4;
   width: 335px;
   border-radius: 6px;
-  background-color: rgba(0, 0, 0, 0.527); }
+  background-color: rgba(0, 0, 0, 0.87); }
 
 .analisis-5 {
   grid-area: analisis-5;
   width: 335px;
   border-radius: 6px;
-  background-color: rgba(0, 0, 0, 0.527); }
+  background-color: rgba(0, 0, 0, 0.87); }
 
 .analisis-6 {
   grid-area: analisis-6;
   width: 335px;
   border-radius: 6px;
-  background-color: rgba(0, 0, 0, 0.527); }
+  background-color: rgba(0, 0, 0, 0.87); }
 
 .analisis-7 {
   grid-area: analisis-7;
   width: 335px;
   border-radius: 6px;
-  background-color: rgba(0, 0, 0, 0.527); }
+  background-color: rgba(0, 0, 0, 0.87); }
 
 .analisis-8 {
   grid-area: analisis-8;
   width: 335px;
   border-radius: 6px;
-  background-color: rgba(0, 0, 0, 0.527); }
+  background-color: rgba(0, 0, 0, 0.87); }
 
 .analisis-9 {
   grid-area: analisis-9;
   width: 335px;
   border-radius: 6px;
-  background-color: rgba(0, 0, 0, 0.527); }
+  background-color: rgba(0, 0, 0, 0.87); }
 
 /*!-------noticias-principales------*/
 .secundarias-dos {
