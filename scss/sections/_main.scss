@@ -724,9 +724,7 @@
 
 .ranking {
     background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend .columna;
     border: 3px grey;
 
     article {
@@ -782,10 +780,9 @@
         padding: 30px;
         width: 620px;
         background-color: rgba(0, 0, 0, 0.295);
-        display: flex;
+        @extend .columna;
         justify-content: space-around;
-        flex-direction: column;
-        align-items: center;
+        
 
         a {
             text-decoration: none;
@@ -815,10 +812,8 @@
         padding: 30px;
         width: 620px;
         background-color: #14141bbd;
-        display: flex;
         justify-content: space-around;
-        flex-direction: column;
-        align-items: center;
+        @extend .columna;
 
         a {
             text-decoration: none;
@@ -846,10 +841,8 @@
     article {
         border: 1px solid rgba(128, 128, 128, 0.486);
         border-radius: 6px;
-        display: flex;
+        @extend .columna;
         justify-content: space-around;
-        flex-direction: column;
-        align-items: center;
         padding: 15px;
         background-color: rgba(0, 0, 0, 0.295);
 
@@ -1463,7 +1456,9 @@
     }
 
     .noticiathelastofus-dos {
-        @extend .columna;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         img {
             width: 700px;
@@ -1472,7 +1467,9 @@
 
     .contenedor div {
         width: 900px;
-        @extend .columna;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 

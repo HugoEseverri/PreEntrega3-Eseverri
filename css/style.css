@@ -15,7 +15,7 @@
   color: white;
   list-style: none; }
 
-.column {
+.columna, .contenedor, .ranking, .trailers article, .walkthrough div, .esports article {
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -519,11 +519,6 @@
 .color-fondo {
   background-color: #14141b; }
 
-.contenedor {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
 .noticiathelastofus {
   background-color: white;
   width: 1200px;
@@ -567,9 +562,6 @@
 /*!-------análisis-ranking------*/
 .ranking {
   background-color: black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   border: 3px grey; }
   .ranking article {
     border: 1px solid grey;
@@ -610,10 +602,7 @@
     padding: 30px;
     width: 620px;
     background-color: rgba(0, 0, 0, 0.295);
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center; }
+    justify-content: space-around; }
     .trailers article a {
       text-decoration: none;
       list-style: none;
@@ -634,10 +623,7 @@
     padding: 30px;
     width: 620px;
     background-color: #14141bbd;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center; }
+    justify-content: space-around; }
     .walkthrough div a {
       text-decoration: none;
       list-style: none;
@@ -655,10 +641,7 @@
   .esports article {
     border: 1px solid rgba(128, 128, 128, 0.486);
     border-radius: 6px;
-    display: flex;
     justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
     padding: 15px;
     background-color: rgba(0, 0, 0, 0.295); }
     .esports article a {
