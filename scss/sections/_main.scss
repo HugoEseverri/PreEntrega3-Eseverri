@@ -70,6 +70,7 @@
     div {
         a {
             text-align: center;
+
             &:hover {
                 color: #ffffff79;
             }
@@ -432,10 +433,12 @@
             &:hover {
                 color: #ffffff79;
             }
-            img{
+
+            img {
                 width: 385px;
                 padding: 10px;
             }
+
             h6 {
                 padding: 10px;
             }
@@ -505,9 +508,10 @@
 
 /*!-------noticias-random------*/
 
-.color-random{
+.color-random {
     background-image: linear-gradient($negro-carousel, $gris, rgb(31, 30, 30));
 }
+
 .terciarias-dos {
     background-image: linear-gradient(rgb(31, 30, 30), $gris, $negro-carousel);
 }
@@ -588,7 +592,7 @@
 
 /*!-------noticias-hardware------*/
 
-.color-random__dos{
+.color-random__dos {
     background-image: linear-gradient($negro-carousel, $gris, rgb(31, 30, 30));
 }
 
@@ -597,6 +601,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
     grid-template-areas:
         "hardware-1 hardware-3"
         "hardware-2 hardware-4"
@@ -607,9 +612,7 @@
 
     div {
         a {
-            text-decoration: none;
-            list-style: none;
-            color: white;
+            @extend .decoration;
 
             &:hover {
                 color: #ffffff79;
@@ -1145,7 +1148,7 @@ input {
 /*!-----@media---index-----*/
 
 
-@media (max-width: 1625px) {
+@media (max-width: 1655px) {
     .container-1 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -1369,12 +1372,10 @@ input {
         align-items: center;
     }
 
-    .hardware-5 {
-        height: 0%;
-    }
 
     .container-6 div {
-        width: 450px;
+        width: 410px;
+        height: 360px;
 
         a {
             display: flex;
@@ -1446,7 +1447,7 @@ input {
 
         div {
             width: 300px;
-            height: 320px;
+            height: 300px;
 
             a {
                 img {

@@ -5,7 +5,7 @@
   padding: 0;
   font-family: poppins; }
 
-.decoration, .terciarias a, .container-2 div a, .analisis-juegos a, .titulo-dos-noticias a, .container-4 div a, .container-5 div a {
+.decoration, .terciarias a, .container-2 div a, .analisis-juegos a, .titulo-dos-noticias a, .container-4 div a, .container-5 div a, .container-6 div a {
   text-decoration: none;
   list-style: none;
   color: white; }
@@ -23,7 +23,7 @@
   width: 350px;
   height: 290px;
   border-radius: 6px;
-  background-color: #14141bab; }
+  background-color: #000000e5; }
 
 .principalesuno, .noticia-1, .noticia-2, .noticia-3, .noticia-4, .noticia-5, .noticia-6 {
   width: 345px;
@@ -38,7 +38,11 @@
 
 .hardwaredos, .hardware-1, .hardware-2, .hardware-3, .hardware-4 {
   width: 610px;
-  height: 450px; }
+  height: 420px;
+  border-radius: 6px;
+  background-color: #000000e5;
+  box-shadow: 0px 1px 10px rgba(255, 3, 3, 0.521);
+  padding: 5px; }
 
 @keyframes crecer {
   0% {
@@ -490,18 +494,15 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
   grid-template-areas: "hardware-1 hardware-3" "hardware-2 hardware-4" "hardware-5 hardware-5";
   justify-items: center;
   padding: 30px 250px 30px 250px;
   background-image: linear-gradient(#1f1e1e, #14141b, #050505); }
-  .container-6 div a {
-    text-decoration: none;
-    list-style: none;
-    color: white; }
-    .container-6 div a:hover {
-      color: #ffffff79; }
-    .container-6 div a h6 {
-      padding: 15px; }
+  .container-6 div a:hover {
+    color: #ffffff79; }
+  .container-6 div a h6 {
+    padding: 15px; }
 
 .hardware-1 {
   grid-area: hardware-1; }
@@ -866,7 +867,7 @@ input {
     transform: scale(1.05); }
 
 /*!-----@media---index-----*/
-@media (max-width: 1625px) {
+@media (max-width: 1655px) {
   .container-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -1004,10 +1005,9 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center; }
-  .hardware-5 {
-    height: 0%; }
   .container-6 div {
-    width: 450px; }
+    width: 410px;
+    height: 360px; }
     .container-6 div a {
       display: flex;
       flex-direction: column;
@@ -1050,7 +1050,7 @@ input {
     padding: 0 0 15px 0; }
     .container-6 div {
       width: 300px;
-      height: 320px; }
+      height: 300px; }
       .container-6 div a img {
         width: 280px; }
   .hardware-5 {
