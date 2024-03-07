@@ -25,6 +25,37 @@
   border-radius: 6px;
   background-color: #14141bab; }
 
+@keyframes crecer {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.3); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes banda-elastica {
+  0% {
+    transform: scale(1); }
+  30% {
+    transform: scaleX(1.25) scaleY(0.75); }
+  40% {
+    transform: scaleX(0.75) scaleY(1.25); }
+  60% {
+    transform: scaleX(1.15) scaleY(0.85); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes backin {
+  0% {
+    transform: translateX(2000px) scaleX(2.5) scaleY(0.5) rotate(60deg);
+    opacity: 0; }
+  80% {
+    transform: translateX(-20px) scaleX(0.9) scaleY(1.1) rotate(-20deg);
+    opacity: 1; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
 .medida-titulo {
   font-size: 60px; }
   .medida-titulo h1 {
@@ -56,7 +87,9 @@
   .w-60 {
     width: 500px; }
   .medida-titulo {
-    font-size: 30px; } }
+    font-size: 30px; }
+    .medida-titulo h1 {
+      font-size: 30px; } }
 
 @media (max-width: 520px) {
   .w-60 {
@@ -540,6 +573,8 @@
   background-color: white;
   width: 1200px;
   padding: 0 100px 20px 100px; }
+  .noticiathelastofus-dos p {
+    text-align: justify; }
   .noticiathelastofus-dos img {
     width: 1000px; }
 
@@ -547,6 +582,8 @@
   background-color: white;
   width: 1200px;
   padding: 0 100px 80px 100px; }
+  .noticiathelastofus-tres p {
+    text-align: justify; }
   .noticiathelastofus-tres h2 {
     padding: 10px;
     text-align: center; }
@@ -827,17 +864,24 @@
     background-color: #14141b;
     padding: 15px;
     text-align: center;
-    color: white; }
+    color: white;
+    animation-name: crecer;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; }
   .nosotros-somos p {
     color: white;
-    font-size: 20px; }
+    font-size: 20px;
+    text-align: justify; }
 
 .nosotros-somos-dos {
   background-color: #14141b;
-  padding: 50px 200px 30px 200px; }
+  padding: 20px 200px 30px 200px; }
   .nosotros-somos-dos p {
     color: white;
-    font-size: 20px; }
+    font-size: 20px;
+    text-align: justify; }
+  .nosotros-somos-dos h3 {
+    color: white; }
 
 /*!------puntuación-----*/
 .puntua {
@@ -845,6 +889,19 @@
   padding: 30px 200px 30px 200px; }
   .puntua div {
     color: white; }
+    .puntua div p {
+      font-size: 20px;
+      text-align: justify; }
+    .puntua div h3 {
+      color: white; }
+
+input {
+  border-radius: 9px;
+  padding: 5px;
+  margin: 5px; }
+  input:focus {
+    color: #e90f0fab;
+    transform: scale(1.05); }
 
 /*!-----@media---index-----*/
 @media (max-width: 1625px) {

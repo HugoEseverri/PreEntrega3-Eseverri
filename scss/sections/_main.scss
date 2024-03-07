@@ -688,6 +688,9 @@
     background-color: white;
     width: 1200px;
     padding: 0 100px 20px 100px;
+    p{
+        text-align: justify;
+    }
 
     img {
         width: 1000px;
@@ -698,6 +701,9 @@
     background-color: white;
     width: 1200px;
     padding: 0 100px 80px 100px;
+    p{
+        text-align: justify;
+    }
 
     h2 {
         padding: 10px;
@@ -1082,21 +1088,29 @@
         padding: 15px;
         text-align: center;
         color: white;
+        animation-name: crecer;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
     }
 
     p {
         color: white;
         font-size: 20px;
+        text-align: justify;
     }
 }
 
 .nosotros-somos-dos {
     background-color: $gris;
-    padding: 50px 200px 30px 200px;
+    padding: 20px 200px 30px 200px;
 
     p {
         color: white;
         font-size: 20px;
+        text-align: justify;
+    }
+    h3{
+        color: white;
     }
 }
 
@@ -1108,6 +1122,25 @@
 
     div {
         color: white;
+
+        p {
+            font-size: 20px;
+            text-align: justify;
+        }
+        h3{
+            color: white;
+        }
+    }
+}
+
+input {
+    border-radius: 9px;
+    padding: 5px;
+    margin: 5px;
+
+    &:focus {
+        color: $rojizo;
+        transform: scale(1.05);
     }
 }
 
