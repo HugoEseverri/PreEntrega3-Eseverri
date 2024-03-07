@@ -78,15 +78,16 @@
   padding: 30px;
   background-color: black;
   text-align: center; }
-
-a {
-  text-decoration: none;
-  list-style: none;
-  color: white;
-  font-size: 30px;
-  transform: scale(1.05); }
-  a:hover {
-    color: #e90f0fab; }
+  .titulo a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 30px;
+    display: inline-block;
+    transition: transform 0.3s ease; }
+    .titulo a:hover {
+      color: #e90f0fab;
+      transform: scale(1.1); }
 
 .secundarias {
   background-image: linear-gradient(black, #0e0e0f);
@@ -178,9 +179,12 @@ a {
     text-decoration: none;
     list-style: none;
     color: white;
-    font-size: 30px; }
+    font-size: 30px;
+    display: inline-block;
+    transition: transform 0.3s ease; }
     .titulo-dos a:hover {
-      color: #e90f0fab; }
+      color: #e90f0fab;
+      transform: scale(1.1); }
 
 .videos {
   background-image: linear-gradient(#14141b, #0a0a0a);
@@ -249,16 +253,6 @@ a {
   grid-area: noticiarandom-8; }
 
 /*!-------index-análisis------*/
-.titulo-dos {
-  background-color: #14141b;
-  padding: 30px;
-  text-align: center;
-  color: white; }
-  .titulo-dos a {
-    text-decoration: none;
-    list-style: none;
-    color: white; }
-
 .analisis-juegos {
   background-image: linear-gradient(#14141b, #0a0a0a); }
   .analisis-juegos div {
@@ -356,7 +350,12 @@ a {
     text-decoration: none;
     list-style: none;
     color: white;
-    font-size: 30px; }
+    font-size: 30px;
+    display: inline-block;
+    transition: transform 0.3s ease; }
+    .titulo-dos-noticias a:hover {
+      color: #e90f0fab;
+      transform: scale(1.1); }
 
 .container-4 {
   display: grid;
