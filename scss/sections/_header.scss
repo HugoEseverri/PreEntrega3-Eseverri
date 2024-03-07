@@ -1,6 +1,7 @@
 .medida-titulo {
     font-size: 60px;
-    h1{
+
+    h1 {
         font-size: 60px;
         padding: 5px;
     }
@@ -10,8 +11,17 @@
     justify-content: flex-end;
 }
 
-.fixed-top{
+.fixed-top {
     background-image: linear-gradient(rgb(15, 15, 15), rgb(5, 5, 5));
+}
+
+.custom-hover {
+    display: inline-block;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 /*!-----@media---index-----*/
@@ -46,9 +56,11 @@
     .w-60 {
         width: 500px;
     }
-    .medida-titulo{
+
+    .medida-titulo {
         font-size: 30px;
-        h1{
+
+        h1 {
             font-size: 30px;
         }
     }

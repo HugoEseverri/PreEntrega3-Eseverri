@@ -65,9 +65,11 @@
         "noticia-1 noticia-2 noticia-5 noticia-7"
         "noticia-3 noticia-4 noticia-6 noticia-7";
     align-items: baseline;
+    justify-items: center;
 
     div {
         a {
+            text-align: center;
             &:hover {
                 color: #ffffff79;
             }
@@ -82,45 +84,33 @@
 
 .noticia-1 {
     grid-area: noticia-1;
-    width: 345px;
-    border-radius: 6px;
-    background-color: #14141bab;
+    @extend .principalesuno;
 }
 
 .noticia-2 {
     grid-area: noticia-2;
-    width: 345px;
-    border-radius: 6px;
-    background-color: #14141bab;
+    @extend .principalesuno;
 }
 
 
 .noticia-3 {
     grid-area: noticia-3;
-    width: 345px;
-    border-radius: 6px;
-    background-color: #14141bab;
+    @extend .principalesuno;
 }
 
 .noticia-4 {
     grid-area: noticia-4;
-    width: 345px;
-    border-radius: 6px;
-    background-color: #14141bab;
+    @extend .principalesuno;
 }
 
 .noticia-5 {
     grid-area: noticia-5;
-    width: 345px;
-    border-radius: 6px;
-    background-color: #14141bab;
+    @extend .principalesuno;
 }
 
 .noticia-6 {
     grid-area: noticia-6;
-    width: 345px;
-    border-radius: 6px;
-    background-color: #14141bab;
+    @extend .principalesuno;
 }
 
 .noticia-7 {
@@ -210,6 +200,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 20px;
     grid-template-areas:
         "noticiarandom-1 noticiarandom-2 noticiarandom-3 noticiarandom-7"
         "noticiarandom-4 noticiarandom-5 noticiarandom-6 noticiarandom-8";
@@ -386,7 +377,7 @@
 /*!-------noticias-principales------*/
 
 .secundarias-dos {
-    background-color: $gris;
+    background-image: linear-gradient(rgb(31, 30, 30), $gris, $negro-carousel);
     padding: 160px 200px 10px 200px;
 
     h1 {
@@ -401,7 +392,7 @@
 }
 
 .titulo-dos-noticias {
-    background-color: $gris;
+    background-image: linear-gradient($negro-carousel, $gris, rgb(31, 30, 30));
     padding: 30px;
     @extend .align;
 
@@ -428,12 +419,14 @@
         "noticiasp-3 noticiasp-4 noticiasp-10"
         "noticiasp-5 noticiasp-6 noticiasp-11"
         "noticiasp-7 noticiasp-8 noticiasp-12";
-    justify-items: center;
-    padding: 30px 250px 0 250px;
-    background-color: $gris;
+    align-items: center;
+    padding: 30px 250px 30px 250px;
+    background-image: linear-gradient(rgb(31, 30, 30), $gris, $negro-carousel);
 
     div {
         a {
+            text-align: center;
+
             @extend .decoration;
 
             &:hover {
@@ -441,9 +434,10 @@
             }
             img{
                 width: 385px;
+                padding: 10px;
             }
             h6 {
-                padding: 15px;
+                padding: 10px;
             }
         }
     }
@@ -511,8 +505,11 @@
 
 /*!-------noticias-random------*/
 
+.color-random{
+    background-image: linear-gradient($negro-carousel, $gris, rgb(31, 30, 30));
+}
 .terciarias-dos {
-    background-color: black;
+    background-image: linear-gradient(rgb(31, 30, 30), $gris, $negro-carousel);
 }
 
 .container-5 {
@@ -591,6 +588,10 @@
 
 /*!-------noticias-hardware------*/
 
+.color-random__dos{
+    background-image: linear-gradient($negro-carousel, $gris, rgb(31, 30, 30));
+}
+
 .container-6 {
     background-color: $gris;
     display: grid;
@@ -602,6 +603,7 @@
         "hardware-5 hardware-5";
     justify-items: center;
     padding: 30px 250px 30px 250px;
+    background-image: linear-gradient(rgb(31, 30, 30), $gris, $negro-carousel);
 
     div {
         a {
@@ -622,26 +624,22 @@
 
 .hardware-1 {
     grid-area: hardware-1;
-    width: 610px;
-    height: 450px;
+    @extend .hardwaredos;
 }
 
 .hardware-2 {
     grid-area: hardware-2;
-    width: 610px;
-    height: 450px;
+    @extend .hardwaredos;
 }
 
 .hardware-3 {
     grid-area: hardware-3;
-    width: 610px;
-    height: 450px;
+    @extend .hardwaredos;
 }
 
 .hardware-4 {
     grid-area: hardware-4;
-    width: 610px;
-    height: 450px;
+    @extend .hardwaredos;
 }
 
 .hardware-5 {
