@@ -14,10 +14,10 @@
 /*!----------html-index-noticias----------*/
 
 .titulo {
-    color: white;
     padding: 30px;
     background-color: black;
-    text-align: center;
+    @extend .align;
+
 
     a {
         text-decoration: none;
@@ -154,8 +154,7 @@
 .titulo-dos {
     background-color: $gris;
     padding: 30px;
-    text-align: center;
-    color: white;
+    @extend .align;
 
     a {
         text-decoration: none;
@@ -203,9 +202,7 @@
     background-image: linear-gradient(black, #0e0e0f);
 
     a {
-        text-decoration: none;
-        list-style: none;
-        color: white;
+        @extend .decoration;
     }
 }
 
@@ -223,6 +220,8 @@
 
     div {
         a {
+            @extend .decoration;
+
             &:hover {
                 color: #ffffff93;
             }
@@ -289,9 +288,7 @@
     }
 
     a {
-        text-decoration: none;
-        list-style: none;
-        color: white;
+        @extend .decoration;
     }
 }
 
@@ -393,8 +390,7 @@
     padding: 160px 200px 10px 200px;
 
     h1 {
-        color: white;
-        text-align: center;
+        @extend .align;
         padding: 10px;
     }
 
@@ -407,13 +403,10 @@
 .titulo-dos-noticias {
     background-color: $gris;
     padding: 30px;
-    text-align: center;
-    color: white;
+    @extend .align;
 
     a {
-        text-decoration: none;
-        list-style: none;
-        color: white;
+        @extend .decoration;
         font-size: 30px;
         display: inline-block;
         transition: transform 0.3s ease;
@@ -429,6 +422,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 20px;
     grid-template-areas:
         "noticiasp-1 noticiasp-2 noticiasp-9"
         "noticiasp-3 noticiasp-4 noticiasp-10"
@@ -440,14 +434,14 @@
 
     div {
         a {
-            text-decoration: none;
-            list-style: none;
-            color: white;
+            @extend .decoration;
 
             &:hover {
                 color: #ffffff79;
             }
-
+            img{
+                width: 385px;
+            }
             h6 {
                 padding: 15px;
             }
@@ -457,62 +451,62 @@
 
 .noticiasp-1 {
     grid-area: noticiasp-1;
-    width: 410px;
+    @extend .principalesdos;
 }
 
 .noticiasp-2 {
     grid-area: noticiasp-2;
-    width: 410px;
+    @extend .principalesdos;
 }
 
 .noticiasp-3 {
     grid-area: noticiasp-3;
-    width: 410px;
+    @extend .principalesdos;
 }
 
 .noticiasp-4 {
     grid-area: noticiasp-4;
-    width: 410px;
+    @extend .principalesdos;
 }
 
 .noticiasp-5 {
     grid-area: noticiasp-5;
-    width: 410px;
+    @extend .principalesdos;
 }
 
 .noticiasp-6 {
     grid-area: noticiasp-6;
-    width: 410px;
+    @extend .principalesdos;
 }
 
 .noticiasp-7 {
     grid-area: noticiasp-7;
-    width: 410px;
+    @extend .principalesdos;
 }
 
 .noticiasp-8 {
     grid-area: noticiasp-8;
-    width: 410px;
+    @extend .principalesdos;
 }
 
 .noticiasp-9 {
     grid-area: noticiasp-9;
-    width: 410px;
+    @extend .principalesdos;
 }
 
 .noticiasp-10 {
     grid-area: noticiasp-10;
-    width: 410px;
+    @extend .principalesdos;
 }
 
 .noticiasp-11 {
     grid-area: noticiasp-11;
-    width: 410px;
+    @extend .principalesdos;
 }
 
 .noticiasp-12 {
     grid-area: noticiasp-12;
-    width: 410px;
+    @extend .principalesdos;
 }
 
 /*!-------noticias-random------*/
@@ -525,26 +519,31 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 20px;
     grid-template-areas:
         "random-1 random-2"
         "random-3 random-4"
         "random-5 random-6"
         "random-7 random-8";
     justify-items: center;
-    padding: 0 350px 0 350px;
+    padding: 0 350px 30px 350px;
 
     div {
         a {
-            text-decoration: none;
-            list-style: none;
-            color: white;
+            @extend .decoration;
 
             &:hover {
                 color: #ffffff79;
             }
 
+            img {
+                padding: 10px;
+                width: 350px;
+            }
+
             h6 {
-                padding: 15px;
+                padding: 5px;
+                text-align: center;
             }
         }
     }
@@ -552,42 +551,42 @@
 
 .random-1 {
     grid-area: random-1;
-    width: 355px;
+    @extend .random;
 }
 
 .random-2 {
     grid-area: random-2;
-    width: 355px;
+    @extend .random;
 }
 
 .random-3 {
     grid-area: random-3;
-    width: 355px;
+    @extend .random;
 }
 
 .random-4 {
     grid-area: random-4;
-    width: 355px;
+    @extend .random;
 }
 
 .random-5 {
     grid-area: random-5;
-    width: 355px;
+    @extend .random;
 }
 
 .random-6 {
     grid-area: random-6;
-    width: 355px;
+    @extend .random;
 }
 
 .random-7 {
     grid-area: random-7;
-    width: 355px;
+    @extend .random;
 }
 
 .random-8 {
     grid-area: random-8;
-    width: 355px;
+    @extend .random;
 }
 
 /*!-------noticias-hardware------*/
@@ -688,7 +687,8 @@
     background-color: white;
     width: 1200px;
     padding: 0 100px 20px 100px;
-    p{
+
+    p {
         text-align: justify;
     }
 
@@ -701,7 +701,8 @@
     background-color: white;
     width: 1200px;
     padding: 0 100px 80px 100px;
-    p{
+
+    p {
         text-align: justify;
     }
 
@@ -718,9 +719,8 @@
     padding: 160px 200px 30px 200px;
 
     h1 {
-        color: white;
-        text-align: center;
         padding: 10px;
+        @extend .align;
     }
 
     p {
@@ -744,9 +744,8 @@
         a {
             text-decoration: none;
             list-style: none;
-            color: white;
             display: flex;
-            align-items: center;
+            @extend .align;
 
             h6 {
                 padding: 15px;
@@ -762,8 +761,7 @@
     padding: 160px 200px 30px 200px;
 
     h1 {
-        color: white;
-        text-align: center;
+        @extend .align;
         padding: 10px;
     }
 
@@ -874,9 +872,8 @@
     padding: 160px 200px 30px 200px;
 
     h1 {
-        color: white;
-        text-align: center;
         padding: 10px;
+        @extend .align;
     }
 
     p {
@@ -1109,7 +1106,8 @@
         font-size: 20px;
         text-align: justify;
     }
-    h3{
+
+    h3 {
         color: white;
     }
 }
@@ -1127,7 +1125,8 @@
             font-size: 20px;
             text-align: justify;
         }
-        h3{
+
+        h3 {
             color: white;
         }
     }

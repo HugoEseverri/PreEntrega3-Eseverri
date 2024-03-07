@@ -5,25 +5,29 @@
   padding: 0;
   font-family: poppins; }
 
-.decoration {
+.decoration, .terciarias a, .container-2 div a, .analisis-juegos a, .titulo-dos-noticias a, .container-4 div a, .container-5 div a {
   text-decoration: none;
   list-style: none;
   color: white; }
 
-.align {
+.align, .titulo, .titulo-dos, .secundarias-dos h1, .titulo-dos-noticias, .analisis-texto h1, .ranking article a, .videos-texto h1, .generos-texto h1 {
   text-align: center;
-  color: white;
-  list-style: none; }
+  color: white; }
 
 .columna, .contenedor, .ranking, .trailers article, .walkthrough div, .esports article {
   display: flex;
   flex-direction: column;
   align-items: center; }
 
-.random, .noticiarandom-1, .noticiarandom-2, .noticiarandom-3, .noticiarandom-4, .noticiarandom-5, .noticiarandom-6, .noticiarandom-7, .noticiarandom-8 {
-  width: 355px;
+.random, .noticiarandom-1, .noticiarandom-2, .noticiarandom-3, .noticiarandom-4, .noticiarandom-5, .noticiarandom-6, .noticiarandom-7, .noticiarandom-8, .random-1, .random-2, .random-3, .random-4, .random-5, .random-6, .random-7, .random-8 {
+  width: 350px;
   border-radius: 6px;
   background-color: #14141bab; }
+
+.principalesdos, .noticiasp-1, .noticiasp-2, .noticiasp-3, .noticiasp-4, .noticiasp-5, .noticiasp-6, .noticiasp-7, .noticiasp-8, .noticiasp-9, .noticiasp-10, .noticiasp-11, .noticiasp-12 {
+  width: 410px;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.87); }
 
 @keyframes crecer {
   0% {
@@ -107,10 +111,8 @@
 
 /*!----------html-index-noticias----------*/
 .titulo {
-  color: white;
   padding: 30px;
-  background-color: black;
-  text-align: center; }
+  background-color: black; }
   .titulo a {
     text-decoration: none;
     list-style: none;
@@ -205,9 +207,7 @@
 /*!-------index-videos------*/
 .titulo-dos {
   background-color: #14141b;
-  padding: 30px;
-  text-align: center;
-  color: white; }
+  padding: 30px; }
   .titulo-dos a {
     text-decoration: none;
     list-style: none;
@@ -239,10 +239,6 @@
 /*!-------index-n-random------*/
 .terciarias {
   background-image: linear-gradient(black, #0e0e0f); }
-  .terciarias a {
-    text-decoration: none;
-    list-style: none;
-    color: white; }
 
 .container-2 {
   display: grid;
@@ -290,10 +286,6 @@
   background-image: linear-gradient(#14141b, #0a0a0a); }
   .analisis-juegos div {
     padding: 15px; }
-  .analisis-juegos a {
-    text-decoration: none;
-    list-style: none;
-    color: white; }
 
 .container-3 {
   display: grid;
@@ -367,8 +359,6 @@
   background-color: #14141b;
   padding: 160px 200px 10px 200px; }
   .secundarias-dos h1 {
-    color: white;
-    text-align: center;
     padding: 10px; }
   .secundarias-dos p {
     color: white;
@@ -376,13 +366,8 @@
 
 .titulo-dos-noticias {
   background-color: #14141b;
-  padding: 30px;
-  text-align: center;
-  color: white; }
+  padding: 30px; }
   .titulo-dos-noticias a {
-    text-decoration: none;
-    list-style: none;
-    color: white;
     font-size: 30px;
     display: inline-block;
     transition: transform 0.3s ease; }
@@ -394,66 +379,53 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 20px;
   grid-template-areas: "noticiasp-1 noticiasp-2 noticiasp-9" "noticiasp-3 noticiasp-4 noticiasp-10" "noticiasp-5 noticiasp-6 noticiasp-11" "noticiasp-7 noticiasp-8 noticiasp-12";
   justify-items: center;
   padding: 30px 250px 0 250px;
   background-color: #14141b; }
-  .container-4 div a {
-    text-decoration: none;
-    list-style: none;
-    color: white; }
-    .container-4 div a:hover {
-      color: #ffffff79; }
-    .container-4 div a h6 {
-      padding: 15px; }
+  .container-4 div a:hover {
+    color: #ffffff79; }
+  .container-4 div a img {
+    width: 385px; }
+  .container-4 div a h6 {
+    padding: 15px; }
 
 .noticiasp-1 {
-  grid-area: noticiasp-1;
-  width: 410px; }
+  grid-area: noticiasp-1; }
 
 .noticiasp-2 {
-  grid-area: noticiasp-2;
-  width: 410px; }
+  grid-area: noticiasp-2; }
 
 .noticiasp-3 {
-  grid-area: noticiasp-3;
-  width: 410px; }
+  grid-area: noticiasp-3; }
 
 .noticiasp-4 {
-  grid-area: noticiasp-4;
-  width: 410px; }
+  grid-area: noticiasp-4; }
 
 .noticiasp-5 {
-  grid-area: noticiasp-5;
-  width: 410px; }
+  grid-area: noticiasp-5; }
 
 .noticiasp-6 {
-  grid-area: noticiasp-6;
-  width: 410px; }
+  grid-area: noticiasp-6; }
 
 .noticiasp-7 {
-  grid-area: noticiasp-7;
-  width: 410px; }
+  grid-area: noticiasp-7; }
 
 .noticiasp-8 {
-  grid-area: noticiasp-8;
-  width: 410px; }
+  grid-area: noticiasp-8; }
 
 .noticiasp-9 {
-  grid-area: noticiasp-9;
-  width: 410px; }
+  grid-area: noticiasp-9; }
 
 .noticiasp-10 {
-  grid-area: noticiasp-10;
-  width: 410px; }
+  grid-area: noticiasp-10; }
 
 .noticiasp-11 {
-  grid-area: noticiasp-11;
-  width: 410px; }
+  grid-area: noticiasp-11; }
 
 .noticiasp-12 {
-  grid-area: noticiasp-12;
-  width: 410px; }
+  grid-area: noticiasp-12; }
 
 /*!-------noticias-random------*/
 .terciarias-dos {
@@ -463,49 +435,42 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 20px;
   grid-template-areas: "random-1 random-2" "random-3 random-4" "random-5 random-6" "random-7 random-8";
   justify-items: center;
-  padding: 0 350px 0 350px; }
-  .container-5 div a {
-    text-decoration: none;
-    list-style: none;
-    color: white; }
-    .container-5 div a:hover {
-      color: #ffffff79; }
-    .container-5 div a h6 {
-      padding: 15px; }
+  padding: 0 350px 30px 350px; }
+  .container-5 div a:hover {
+    color: #ffffff79; }
+  .container-5 div a img {
+    padding: 10px;
+    width: 350px; }
+  .container-5 div a h6 {
+    padding: 5px;
+    text-align: center; }
 
 .random-1 {
-  grid-area: random-1;
-  width: 355px; }
+  grid-area: random-1; }
 
 .random-2 {
-  grid-area: random-2;
-  width: 355px; }
+  grid-area: random-2; }
 
 .random-3 {
-  grid-area: random-3;
-  width: 355px; }
+  grid-area: random-3; }
 
 .random-4 {
-  grid-area: random-4;
-  width: 355px; }
+  grid-area: random-4; }
 
 .random-5 {
-  grid-area: random-5;
-  width: 355px; }
+  grid-area: random-5; }
 
 .random-6 {
-  grid-area: random-6;
-  width: 355px; }
+  grid-area: random-6; }
 
 .random-7 {
-  grid-area: random-7;
-  width: 355px; }
+  grid-area: random-7; }
 
 .random-8 {
-  grid-area: random-8;
-  width: 355px; }
+  grid-area: random-8; }
 
 /*!-------noticias-hardware------*/
 .container-6 {
@@ -593,8 +558,6 @@
   background-color: #14141b;
   padding: 160px 200px 30px 200px; }
   .analisis-texto h1 {
-    color: white;
-    text-align: center;
     padding: 10px; }
   .analisis-texto p {
     color: white;
@@ -611,9 +574,7 @@
     .ranking article a {
       text-decoration: none;
       list-style: none;
-      color: white;
-      display: flex;
-      align-items: center; }
+      display: flex; }
       .ranking article a h6 {
         padding: 15px; }
 
@@ -622,8 +583,6 @@
   background-color: #14141b;
   padding: 160px 200px 30px 200px; }
   .videos-texto h1 {
-    color: white;
-    text-align: center;
     padding: 10px; }
   .videos-texto p {
     color: white;
@@ -697,8 +656,6 @@
   background-color: #14141b;
   padding: 160px 200px 30px 200px; }
   .generos-texto h1 {
-    color: white;
-    text-align: center;
     padding: 10px; }
   .generos-texto p {
     color: white;
