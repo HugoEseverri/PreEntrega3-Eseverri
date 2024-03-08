@@ -68,6 +68,7 @@
     justify-items: center;
 
     div {
+
         a {
             text-align: center;
 
@@ -86,32 +87,38 @@
 .noticia-1 {
     grid-area: noticia-1;
     @extend .principalesuno;
+    @extend .luz;
 }
 
 .noticia-2 {
     grid-area: noticia-2;
     @extend .principalesuno;
+    @extend .luz;
 }
 
 
 .noticia-3 {
     grid-area: noticia-3;
     @extend .principalesuno;
+    @extend .luz;
 }
 
 .noticia-4 {
     grid-area: noticia-4;
     @extend .principalesuno;
+    @extend .luz;
 }
 
 .noticia-5 {
     grid-area: noticia-5;
     @extend .principalesuno;
+    @extend .luz;
 }
 
 .noticia-6 {
     grid-area: noticia-6;
     @extend .principalesuno;
+    @extend .luz;
 }
 
 .noticia-7 {
@@ -148,9 +155,7 @@
     @extend .align;
 
     a {
-        text-decoration: none;
-        list-style: none;
-        color: white;
+        @extend .decoration;
         font-size: 30px;
         display: inline-block;
         transition: transform 0.3s ease;
@@ -171,6 +176,7 @@
     article {
         padding: 10px;
         display: inline-block;
+        @extend .luz;
 
         a {
             display: flex;
@@ -211,7 +217,11 @@
     padding: 10px 100px 30px 100px;
 
     div {
+        @extend .random;
+        @extend .luz;
+
         a {
+            text-align: center;
             @extend .decoration;
 
             &:hover {
@@ -232,42 +242,34 @@
 
 .noticiarandom-1 {
     grid-area: noticiarandom-1;
-    @extend .random
 }
 
 .noticiarandom-2 {
     grid-area: noticiarandom-2;
-    @extend .random
 }
 
 .noticiarandom-3 {
     grid-area: noticiarandom-3;
-    @extend .random
 }
 
 .noticiarandom-4 {
     grid-area: noticiarandom-4;
-    @extend .random
 }
 
 .noticiarandom-5 {
     grid-area: noticiarandom-5;
-    @extend .random
 }
 
 .noticiarandom-6 {
     grid-area: noticiarandom-6;
-    @extend .random
 }
 
 .noticiarandom-7 {
     grid-area: noticiarandom-7;
-    @extend .random
 }
 
 .noticiarandom-8 {
     grid-area: noticiarandom-8;
-    @extend .random
 }
 
 /*!-------index-análisis------*/
@@ -297,9 +299,11 @@
     justify-items: center;
 
     div {
-
+        @extend .analisisuno;
 
         a {
+            text-align: center;
+
             &:hover {
                 color: #ffffff79;
             }
@@ -313,65 +317,38 @@
 
 .analisis-1 {
     grid-area: analisis-1;
-    width: 335px;
-    border-radius: 6px;
-    background-color: $negro-fondo;
 }
 
 .analisis-2 {
     grid-area: analisis-2;
-    width: 335px;
-    border-radius: 6px;
-    background-color: $negro-fondo;
 }
 
 .analisis-3 {
     grid-area: analisis-3;
-    width: 335px;
-    border-radius: 6px;
-    background-color: $negro-fondo;
 }
 
 .analisis-4 {
     grid-area: analisis-4;
-    width: 335px;
-    border-radius: 6px;
-    background-color: $negro-fondo;
 }
 
 .analisis-5 {
     grid-area: analisis-5;
-    width: 335px;
-    border-radius: 6px;
-    background-color: $negro-fondo;
 }
 
 .analisis-6 {
     grid-area: analisis-6;
-    width: 335px;
-    border-radius: 6px;
-    background-color: $negro-fondo;
 }
 
 .analisis-7 {
     grid-area: analisis-7;
-    width: 335px;
-    border-radius: 6px;
-    background-color: $negro-fondo;
 }
 
 .analisis-8 {
     grid-area: analisis-8;
-    width: 335px;
-    border-radius: 6px;
-    background-color: $negro-fondo;
 }
 
 .analisis-9 {
     grid-area: analisis-9;
-    width: 335px;
-    border-radius: 6px;
-    background-color: $negro-fondo;
 }
 
 
@@ -425,6 +402,9 @@
     background-image: linear-gradient(rgb(31, 30, 30), $gris, $negro-carousel);
 
     div {
+        @extend .principalesdos;
+        @extend .luz;
+
         a {
             text-align: center;
 
@@ -448,62 +428,59 @@
 
 .noticiasp-1 {
     grid-area: noticiasp-1;
-    @extend .principalesdos;
+
 }
 
 .noticiasp-2 {
     grid-area: noticiasp-2;
-    @extend .principalesdos;
 }
 
 .noticiasp-3 {
     grid-area: noticiasp-3;
-    @extend .principalesdos;
+
 }
 
 .noticiasp-4 {
     grid-area: noticiasp-4;
-    @extend .principalesdos;
+
 }
 
 .noticiasp-5 {
     grid-area: noticiasp-5;
-    @extend .principalesdos;
+
 }
 
 .noticiasp-6 {
     grid-area: noticiasp-6;
-    @extend .principalesdos;
+
 }
 
 .noticiasp-7 {
     grid-area: noticiasp-7;
-    @extend .principalesdos;
+
 }
 
 .noticiasp-8 {
     grid-area: noticiasp-8;
-    @extend .principalesdos;
+
 }
 
 .noticiasp-9 {
     grid-area: noticiasp-9;
-    @extend .principalesdos;
+
 }
 
 .noticiasp-10 {
     grid-area: noticiasp-10;
-    @extend .principalesdos;
+
 }
 
 .noticiasp-11 {
     grid-area: noticiasp-11;
-    @extend .principalesdos;
 }
 
 .noticiasp-12 {
     grid-area: noticiasp-12;
-    @extend .principalesdos;
 }
 
 /*!-------noticias-random------*/
@@ -530,6 +507,9 @@
     padding: 0 350px 30px 350px;
 
     div {
+        @extend .random;
+        @extend .luz;
+
         a {
             @extend .decoration;
 
@@ -552,42 +532,34 @@
 
 .random-1 {
     grid-area: random-1;
-    @extend .random;
 }
 
 .random-2 {
     grid-area: random-2;
-    @extend .random;
 }
 
 .random-3 {
     grid-area: random-3;
-    @extend .random;
 }
 
 .random-4 {
     grid-area: random-4;
-    @extend .random;
 }
 
 .random-5 {
     grid-area: random-5;
-    @extend .random;
 }
 
 .random-6 {
     grid-area: random-6;
-    @extend .random;
 }
 
 .random-7 {
     grid-area: random-7;
-    @extend .random;
 }
 
 .random-8 {
     grid-area: random-8;
-    @extend .random;
 }
 
 /*!-------noticias-hardware------*/
@@ -730,12 +702,30 @@
     }
 }
 
+.analisis-texto__responsive{
+    background-image: linear-gradient($negro-carousel, $gris, rgb(31, 30, 30));
+    padding: 30px;
+    @extend .align;
+
+    a {
+        @extend .decoration;
+        font-size: 30px;
+        display: inline-block;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            color: $rojizo;
+            transform: scale(1.1);
+        }
+    }
+}
+
+
 /*!-------análisis-ranking------*/
 
 .ranking {
     background-color: black;
     @extend .columna;
-    border: 3px grey;
 
     article {
         border: 1px solid grey;
@@ -1303,6 +1293,7 @@ input {
 
     .container-2 div {
         width: 300px;
+        height: 265px;
 
         a {
             display: flex;
@@ -1409,7 +1400,7 @@ input {
 
         div {
             width: 300px;
-            height: 310px;
+            height: 290px;
 
             a {
                 display: flex;
@@ -1428,7 +1419,7 @@ input {
 
         div {
             width: 300px;
-            height: 280px;
+            height: 265px;
 
             a {
                 display: flex;
@@ -1565,5 +1556,43 @@ input {
         img {
             width: 300px;
         }
+    }
+}
+
+
+/*!-----------@mediaq---análisis------*/
+
+@media (max-width: 1000px) {
+    .ranking article {
+        width: 500px;
+
+        a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .analisis-texto {
+        display: none;
+    }
+
+    .analisis-texto__responsive {
+        display: block;
+        padding-top: 150px;
+    }
+}
+
+@media (max-width: 650px){
+    .analisis-texto__responsive {
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 550px) {
+    .ranking article {
+        width: 350px;
     }
 }
