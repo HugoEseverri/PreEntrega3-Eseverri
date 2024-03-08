@@ -688,7 +688,7 @@
 /*!-------html-análisis------*/
 
 .analisis-texto {
-    background-color: $gris;
+    background-image: linear-gradient(rgb(31, 30, 30), $gris, $negro-carousel);
     padding: 160px 200px 30px 200px;
 
     h1 {
@@ -702,7 +702,7 @@
     }
 }
 
-.analisis-texto__responsive{
+.analisis-texto__responsive {
     background-image: linear-gradient($negro-carousel, $gris, rgb(31, 30, 30));
     padding: 30px;
     @extend .align;
@@ -720,12 +720,16 @@
     }
 }
 
+.color-analisis {
+    background-image: linear-gradient(rgb(31, 30, 30), $gris, $negro-carousel);
+}
 
 /*!-------análisis-ranking------*/
 
 .ranking {
-    background-color: black;
+    background-image: linear-gradient($negro-carousel, $gris, rgb(31, 30, 30));
     @extend .columna;
+    padding: 30px;
 
     article {
         border: 1px solid grey;
@@ -748,7 +752,7 @@
 /*!--------html-videos-texto----*/
 
 .videos-texto {
-    background-color: $gris;
+    background-image: linear-gradient(rgb(31, 30, 30), $gris, $negro-carousel);
     padding: 160px 200px 30px 200px;
 
     h1 {
@@ -764,8 +768,26 @@
 
 /*!-------videos-trailers------*/
 
+.videos-texto-dos {
+    background-image: linear-gradient($negro-carousel, $gris, rgb(31, 30, 30));
+    padding: 30px;
+    @extend .align;
+
+    a {
+        @extend .decoration;
+        font-size: 30px;
+        display: inline-block;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            color: $rojizo;
+            transform: scale(1.1);
+        }
+    }
+}
+
 .trailers {
-    background-color: $gris;
+    background-image: linear-gradient(rgb(31, 30, 30), $gris, $negro-carousel);
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -776,6 +798,7 @@
         border: 1px solid rgba(128, 128, 128, 0.356);
         border-radius: 9px;
         padding: 30px;
+        margin: 20px;
         width: 620px;
         background-color: rgba(0, 0, 0, 0.295);
         @extend .columna;
@@ -783,9 +806,7 @@
 
 
         a {
-            text-decoration: none;
-            list-style: none;
-            color: white;
+            @extend .decoration;
 
             &:hover {
                 color: #ffffff79;
@@ -795,8 +816,12 @@
     }
 }
 
+.color-videos {
+    background-image: linear-gradient($negro-carousel, $gris, rgb(31, 30, 30));
+}
+
 .walkthrough {
-    background-color: black;
+    background-image: linear-gradient(rgb(31, 30, 30), $gris, $negro-carousel);
     padding: 30px 250px 50px 250px;
     display: flex;
     align-items: center;
@@ -808,15 +833,14 @@
         border: 1px solid rgba(128, 128, 128, 0.527);
         border-radius: 6px;
         padding: 30px;
+        margin: 20px;
         width: 620px;
         background-color: #14141bbd;
         justify-content: space-around;
         @extend .columna;
 
         a {
-            text-decoration: none;
-            list-style: none;
-            color: white;
+            @extend .decoration;
 
             &:hover {
                 color: #ffffff79;
@@ -829,8 +853,12 @@
 
 /*!-------videos-esports------*/
 
+.color-esports {
+    background-image: linear-gradient($negro-carousel, $gris, rgb(31, 30, 30));
+}
+
 .esports {
-    background-color: $gris;
+    background-image: linear-gradient(rgb(31, 30, 30), $gris, $negro-carousel);
     display: flex;
     justify-content: space-evenly;
     padding: 30px 250px 50px 250px;
@@ -845,9 +873,7 @@
         background-color: rgba(0, 0, 0, 0.295);
 
         a {
-            text-decoration: none;
-            list-style: none;
-            color: white;
+            @extend .decoration;
 
             &:hover {
                 color: #ffffff79;
@@ -877,9 +903,7 @@
     background-color: $gris;
 
     a {
-        text-decoration: none;
-        list-style: none;
-        color: white;
+        @extend .decoration;
         font-size: 20px;
         padding: 15px;
     }
@@ -897,78 +921,60 @@
         "generos-5 generos-6 generos-7 generos-8"
         "generos-9 generos-10 generos-11 generos-12";
     padding: 30px 250px 30px 250px;
+
+    div {
+        @extend .generosuno;
+    }
 }
+
+
 
 .generos-1 {
     grid-area: generos-1;
-    border: 1px solid rgba(128, 128, 128, 0.527);
-    border-radius: 6px;
 }
 
 .generos-2 {
     grid-area: generos-2;
-    border: 1px solid rgba(128, 128, 128, 0.527);
-    border-radius: 6px;
 }
 
 .generos-3 {
     grid-area: generos-3;
-    border: 1px solid rgba(128, 128, 128, 0.527);
-    border-radius: 6px;
 }
 
 .generos-4 {
     grid-area: generos-4;
-    border: 1px solid rgba(128, 128, 128, 0.527);
-    border-radius: 6px;
 }
 
 .generos-5 {
     grid-area: generos-5;
-    border: 1px solid rgba(128, 128, 128, 0.527);
-    border-radius: 6px;
 }
 
 .generos-6 {
     grid-area: generos-6;
-    border: 1px solid rgba(128, 128, 128, 0.527);
-    border-radius: 6px;
 }
 
 .generos-7 {
     grid-area: generos-7;
-    border: 1px solid rgba(128, 128, 128, 0.527);
-    border-radius: 6px;
 }
 
 .generos-8 {
     grid-area: generos-8;
-    border: 1px solid rgba(128, 128, 128, 0.527);
-    border-radius: 6px;
 }
 
 .generos-9 {
     grid-area: generos-9;
-    border: 1px solid rgba(128, 128, 128, 0.527);
-    border-radius: 6px;
 }
 
 .generos-10 {
     grid-area: generos-10;
-    border: 1px solid rgba(128, 128, 128, 0.527);
-    border-radius: 6px;
 }
 
 .generos-11 {
     grid-area: generos-11;
-    border: 1px solid rgba(128, 128, 128, 0.527);
-    border-radius: 6px;
 }
 
 .generos-12 {
     grid-area: generos-12;
-    border: 1px solid rgba(128, 128, 128, 0.527);
-    border-radius: 6px;
 }
 
 /*!-------géneros-ejemplo-selección-rol------*/
@@ -1572,6 +1578,13 @@ input {
             align-items: center;
         }
     }
+
+    .esports {
+        article {
+            margin: 20px;
+        }
+
+    }
 }
 
 @media (max-width: 800px) {
@@ -1580,12 +1593,11 @@ input {
     }
 
     .analisis-texto__responsive {
-        display: block;
         padding-top: 150px;
     }
 }
 
-@media (max-width: 650px){
+@media (max-width: 650px) {
     .analisis-texto__responsive {
         padding-top: 100px;
     }
@@ -1594,5 +1606,126 @@ input {
 @media (max-width: 550px) {
     .ranking article {
         width: 350px;
+    }
+}
+
+
+/*!-----------@mediaq---videos------*/
+
+
+@media (max-width: 800px) {
+    .videos-texto {
+        display: none;
+    }
+
+    .videos-texto-dos {
+        padding: 160px 0 0 0
+    }
+
+    .trailers {
+        padding: 0;
+
+        article {
+            width: 410px;
+            height: 350px;
+            padding: 0;
+
+            iframe {
+                width: 400px;
+            }
+
+            a {
+                text-align: center;
+            }
+        }
+    }
+
+    .walkthrough {
+        padding: 0;
+
+        div {
+            width: 410px;
+            height: 350px;
+            padding: 0;
+
+            iframe {
+                width: 400px;
+            }
+        }
+    }
+
+    .esports {
+        padding: 0;
+
+        article {
+            padding: 0;
+            margin: 20px;
+            width: 410px;
+            height: 350px;
+
+            iframe {
+                width: 400px;
+            }
+        }
+    }
+
+}
+
+
+
+@media (max-width: 650px) {
+    .videos-texto-dos {
+        padding-top: 100px;
+    }
+
+
+    .trailers {
+        article {
+            iframe {
+                width: 400px;
+            }
+        }
+    }
+
+    .walkthrough {
+        div {
+            iframe {
+                width: 400px;
+            }
+        }
+    }
+
+    .esports {
+        article {
+            iframe {
+                width: 400px;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .trailers {
+        article {
+            iframe {
+                width: 320px;
+            }
+        }
+    }
+
+    .walkthrough {
+        div {
+            iframe {
+                width: 320px;
+            }
+        }
+    }
+
+    .esports {
+        article {
+            iframe {
+                width: 320px;
+            }
+        }
     }
 }

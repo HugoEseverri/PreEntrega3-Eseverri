@@ -5,12 +5,12 @@
   padding: 0;
   font-family: poppins; }
 
-.decoration, .titulo-dos a, .terciarias a, .container-2 div a, .analisis-juegos a, .titulo-dos-noticias a, .container-4 div a, .container-5 div a, .container-6 div a, .analisis-texto__responsive a {
+.decoration, .titulo-dos a, .terciarias a, .container-2 div a, .analisis-juegos a, .titulo-dos-noticias a, .container-4 div a, .container-5 div a, .container-6 div a, .analisis-texto__responsive a, .videos-texto-dos a, .trailers article a, .walkthrough div a, .esports article a, .generos a {
   text-decoration: none;
   list-style: none;
   color: white; }
 
-.align, .titulo, .titulo-dos, .secundarias-dos h1, .titulo-dos-noticias, .analisis-texto h1, .analisis-texto__responsive, .ranking article a, .videos-texto h1, .generos-texto h1 {
+.align, .titulo, .titulo-dos, .secundarias-dos h1, .titulo-dos-noticias, .analisis-texto h1, .analisis-texto__responsive, .ranking article a, .videos-texto h1, .videos-texto-dos, .generos-texto h1 {
   text-align: center;
   color: white; }
 
@@ -52,6 +52,10 @@
 
 .luz, .noticia-1, .noticia-2, .noticia-3, .noticia-4, .noticia-5, .noticia-6, .videos article, .container-2 div, .container-4 div, .container-5 div {
   box-shadow: 0px 1px 10px rgba(201, 201, 201, 0.267); }
+
+.generosuno, .container-8 div {
+  border: 1px solid rgba(128, 128, 128, 0.527);
+  border-radius: 6px; }
 
 @keyframes crecer {
   0% {
@@ -544,7 +548,7 @@
 
 /*!-------html-análisis------*/
 .analisis-texto {
-  background-color: #14141b;
+  background-image: linear-gradient(#1f1e1e, #14141b, #050505);
   padding: 160px 200px 30px 200px; }
   .analisis-texto h1 {
     padding: 10px; }
@@ -563,9 +567,13 @@
       color: #e90f0fab;
       transform: scale(1.1); }
 
+.color-analisis {
+  background-image: linear-gradient(#1f1e1e, #14141b, #050505); }
+
 /*!-------análisis-ranking------*/
 .ranking {
-  background-color: black; }
+  background-image: linear-gradient(#050505, #14141b, #1f1e1e);
+  padding: 30px; }
   .ranking article {
     border: 1px solid grey;
     width: 950px;
@@ -579,7 +587,7 @@
 
 /*!--------html-videos-texto----*/
 .videos-texto {
-  background-color: #14141b;
+  background-image: linear-gradient(#1f1e1e, #14141b, #050505);
   padding: 160px 200px 30px 200px; }
   .videos-texto h1 {
     padding: 10px; }
@@ -588,8 +596,19 @@
     font-size: 20px; }
 
 /*!-------videos-trailers------*/
+.videos-texto-dos {
+  background-image: linear-gradient(#050505, #14141b, #1f1e1e);
+  padding: 30px; }
+  .videos-texto-dos a {
+    font-size: 30px;
+    display: inline-block;
+    transition: transform 0.3s ease; }
+    .videos-texto-dos a:hover {
+      color: #e90f0fab;
+      transform: scale(1.1); }
+
 .trailers {
-  background-color: #14141b;
+  background-image: linear-gradient(#1f1e1e, #14141b, #050505);
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -599,18 +618,18 @@
     border: 1px solid rgba(128, 128, 128, 0.356);
     border-radius: 9px;
     padding: 30px;
+    margin: 20px;
     width: 620px;
     background-color: rgba(0, 0, 0, 0.295);
     justify-content: space-around; }
-    .trailers article a {
-      text-decoration: none;
-      list-style: none;
-      color: white; }
-      .trailers article a:hover {
-        color: #ffffff79; }
+    .trailers article a:hover {
+      color: #ffffff79; }
+
+.color-videos {
+  background-image: linear-gradient(#050505, #14141b, #1f1e1e); }
 
 .walkthrough {
-  background-color: black;
+  background-image: linear-gradient(#1f1e1e, #14141b, #050505);
   padding: 30px 250px 50px 250px;
   display: flex;
   align-items: center;
@@ -620,19 +639,19 @@
     border: 1px solid rgba(128, 128, 128, 0.527);
     border-radius: 6px;
     padding: 30px;
+    margin: 20px;
     width: 620px;
     background-color: #14141bbd;
     justify-content: space-around; }
-    .walkthrough div a {
-      text-decoration: none;
-      list-style: none;
-      color: white; }
-      .walkthrough div a:hover {
-        color: #ffffff79; }
+    .walkthrough div a:hover {
+      color: #ffffff79; }
 
 /*!-------videos-esports------*/
+.color-esports {
+  background-image: linear-gradient(#050505, #14141b, #1f1e1e); }
+
 .esports {
-  background-color: #14141b;
+  background-image: linear-gradient(#1f1e1e, #14141b, #050505);
   display: flex;
   justify-content: space-evenly;
   padding: 30px 250px 50px 250px;
@@ -643,12 +662,8 @@
     justify-content: space-around;
     padding: 15px;
     background-color: rgba(0, 0, 0, 0.295); }
-    .esports article a {
-      text-decoration: none;
-      list-style: none;
-      color: white; }
-      .esports article a:hover {
-        color: #ffffff79; }
+    .esports article a:hover {
+      color: #ffffff79; }
 
 /*!-------html-géneros------*/
 .generos-texto {
@@ -663,9 +678,6 @@
 .generos {
   background-color: #14141b; }
   .generos a {
-    text-decoration: none;
-    list-style: none;
-    color: white;
     font-size: 20px;
     padding: 15px; }
 
@@ -680,64 +692,40 @@
   padding: 30px 250px 30px 250px; }
 
 .generos-1 {
-  grid-area: generos-1;
-  border: 1px solid rgba(128, 128, 128, 0.527);
-  border-radius: 6px; }
+  grid-area: generos-1; }
 
 .generos-2 {
-  grid-area: generos-2;
-  border: 1px solid rgba(128, 128, 128, 0.527);
-  border-radius: 6px; }
+  grid-area: generos-2; }
 
 .generos-3 {
-  grid-area: generos-3;
-  border: 1px solid rgba(128, 128, 128, 0.527);
-  border-radius: 6px; }
+  grid-area: generos-3; }
 
 .generos-4 {
-  grid-area: generos-4;
-  border: 1px solid rgba(128, 128, 128, 0.527);
-  border-radius: 6px; }
+  grid-area: generos-4; }
 
 .generos-5 {
-  grid-area: generos-5;
-  border: 1px solid rgba(128, 128, 128, 0.527);
-  border-radius: 6px; }
+  grid-area: generos-5; }
 
 .generos-6 {
-  grid-area: generos-6;
-  border: 1px solid rgba(128, 128, 128, 0.527);
-  border-radius: 6px; }
+  grid-area: generos-6; }
 
 .generos-7 {
-  grid-area: generos-7;
-  border: 1px solid rgba(128, 128, 128, 0.527);
-  border-radius: 6px; }
+  grid-area: generos-7; }
 
 .generos-8 {
-  grid-area: generos-8;
-  border: 1px solid rgba(128, 128, 128, 0.527);
-  border-radius: 6px; }
+  grid-area: generos-8; }
 
 .generos-9 {
-  grid-area: generos-9;
-  border: 1px solid rgba(128, 128, 128, 0.527);
-  border-radius: 6px; }
+  grid-area: generos-9; }
 
 .generos-10 {
-  grid-area: generos-10;
-  border: 1px solid rgba(128, 128, 128, 0.527);
-  border-radius: 6px; }
+  grid-area: generos-10; }
 
 .generos-11 {
-  grid-area: generos-11;
-  border: 1px solid rgba(128, 128, 128, 0.527);
-  border-radius: 6px; }
+  grid-area: generos-11; }
 
 .generos-12 {
-  grid-area: generos-12;
-  border: 1px solid rgba(128, 128, 128, 0.527);
-  border-radius: 6px; }
+  grid-area: generos-12; }
 
 /*!-------géneros-ejemplo-selección-rol------*/
 .container-9 {
@@ -1120,13 +1108,14 @@ input {
     .ranking article a {
       display: flex;
       flex-direction: column;
-      align-items: center; } }
+      align-items: center; }
+  .esports article {
+    margin: 20px; } }
 
 @media (max-width: 800px) {
   .analisis-texto {
     display: none; }
   .analisis-texto__responsive {
-    display: block;
     padding-top: 150px; } }
 
 @media (max-width: 650px) {
@@ -1136,6 +1125,58 @@ input {
 @media (max-width: 550px) {
   .ranking article {
     width: 350px; } }
+
+/*!-----------@mediaq---videos------*/
+@media (max-width: 800px) {
+  .videos-texto {
+    display: none; }
+  .videos-texto-dos {
+    padding: 160px 0 0 0; }
+  .trailers {
+    padding: 0; }
+    .trailers article {
+      width: 410px;
+      height: 350px;
+      padding: 0; }
+      .trailers article iframe {
+        width: 400px; }
+      .trailers article a {
+        text-align: center; }
+  .walkthrough {
+    padding: 0; }
+    .walkthrough div {
+      width: 410px;
+      height: 350px;
+      padding: 0; }
+      .walkthrough div iframe {
+        width: 400px; }
+  .esports {
+    padding: 0; }
+    .esports article {
+      padding: 0;
+      margin: 20px;
+      width: 410px;
+      height: 350px; }
+      .esports article iframe {
+        width: 400px; } }
+
+@media (max-width: 650px) {
+  .videos-texto-dos {
+    padding-top: 100px; }
+  .trailers article iframe {
+    width: 400px; }
+  .walkthrough div iframe {
+    width: 400px; }
+  .esports article iframe {
+    width: 400px; } }
+
+@media (max-width: 500px) {
+  .trailers article iframe {
+    width: 320px; }
+  .walkthrough div iframe {
+    width: 320px; }
+  .esports article iframe {
+    width: 320px; } }
 
 .titulo-footer {
   color: white;
