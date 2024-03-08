@@ -20,9 +20,7 @@
 
 
     a {
-        text-decoration: none;
-        list-style: none;
-        color: white;
+        @extend .decoration;
         font-size: 30px;
         display: inline-block;
         transition: transform 0.3s ease;
@@ -924,9 +922,18 @@
 
     div {
         @extend .generosuno;
+
+        a {
+            display: inline-block;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                color: $rojizo;
+                transform: scale(1.1);
+            }
+        }
     }
 }
-
 
 
 .generos-1 {
@@ -995,10 +1002,10 @@
     padding: 30px 150px 30px 150px;
 
     div {
+        @extend .generosdos;
+
         a {
-            text-decoration: none;
-            list-style: none;
-            color: white;
+            @extend .decoration;
 
             p {
                 padding: 15px;
@@ -1009,66 +1016,38 @@
 
 .accion-1 {
     grid-area: accion-1;
-    width: 503px;
-    border: 1px solid rgba(128, 128, 128, 0.527);
-    border-radius: 6px;
 }
-
 
 .accion-2 {
     grid-area: accion-2;
-    width: 503px;
-    border: 1px solid rgba(128, 128, 128, 0.527);
-    border-radius: 6px;
 }
 
 .accion-3 {
     grid-area: accion-3;
-    width: 503px;
-    border: 1px solid rgba(128, 128, 128, 0.527);
-    border-radius: 6px;
 }
 
 .accion-5 {
     grid-area: accion-5;
-    width: 503px;
-    border: 1px solid rgba(128, 128, 128, 0.527);
-    border-radius: 6px;
 }
 
 .accion-4 {
     grid-area: accion-4;
-    width: 503px;
-    border: 1px solid rgba(128, 128, 128, 0.527);
-    border-radius: 6px;
 }
 
 .accion-6 {
     grid-area: accion-6;
-    width: 503px;
-    border: 1px solid rgba(128, 128, 128, 0.527);
-    border-radius: 6px;
 }
 
 .accion-7 {
     grid-area: accion-7;
-    width: 503px;
-    border: 1px solid rgba(128, 128, 128, 0.527);
-    border-radius: 6px;
 }
 
 .accion-8 {
     grid-area: accion-8;
-    width: 503px;
-    border: 1px solid rgba(128, 128, 128, 0.527);
-    border-radius: 6px;
 }
 
 .accion-9 {
     grid-area: accion-9;
-    width: 503px;
-    border: 1px solid rgba(128, 128, 128, 0.527);
-    border-radius: 6px;
 }
 
 /*!-------html-contacto-texto-----*/
@@ -1734,32 +1713,116 @@ input {
 /*!-----------@mediaq---contacto------*/
 
 
-@media (max-width: 850px){
-    .nosotros-somos{
+@media (max-width: 850px) {
+    .nosotros-somos {
         padding: 160px 30px 20px 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        h1{
+        h1 {
             width: 100px;
             text-align: center;
         }
-        
+
     }
 
-    .nosotros-somos-dos{
+    .nosotros-somos-dos {
         padding: 20px 30px 20px 30px;
     }
 
-    .puntua{
+    .puntua {
         padding: 20px 15px 20px 15px;
 
     }
 }
 
-@media (max-width: 650px){
-    .nosotros-somos{
+@media (max-width: 650px) {
+    .nosotros-somos {
         padding: 100px 30px 20px 30px;
+    }
+}
+
+
+
+/*!-----------@mediaq---géneros------*/
+
+
+@media (max-width: 1800px) {
+    .container-9 {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "accion-1 accion-2"
+            "accion-3 accion-4"
+            "accion-5 accion-6"
+            "accion-7 accion-8"
+            "accion-9 .";
+    }
+}
+
+@media (max-width: 1350px) {
+    .container-8 {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "generos-1 generos-2 generos-3"
+            "generos-4 generos-5 generos-6"
+            "generos-7 generos-8 generos-9"
+            "generos-10 generos-11 generos-12";
+        padding: 15px 50px 15px 50px;
+    }
+
+    .container-9 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 800px) {
+    .generos-texto {
+        p {
+            display: none;
+        }
+    }
+
+    .container-8 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+}
+
+@media (max-width: 650px) {
+    .generos-texto {
+        padding: 100px 30px 15px 30px;
+    }
+
+    .container-9 {
+        div {
+            width: 375px;
+
+            a {
+                img {
+                    width: 375px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .container-9 {
+        div {
+            width: 302px;
+
+            a {
+                img {
+                    width: 300px;
+                }
+            }
+        }
     }
 }

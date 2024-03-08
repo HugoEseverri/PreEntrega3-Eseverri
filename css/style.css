@@ -5,7 +5,7 @@
   padding: 0;
   font-family: poppins; }
 
-.decoration, .titulo-dos a, .terciarias a, .container-2 div a, .analisis-juegos a, .titulo-dos-noticias a, .container-4 div a, .container-5 div a, .container-6 div a, .analisis-texto__responsive a, .videos-texto-dos a, .trailers article a, .walkthrough div a, .esports article a, .generos a {
+.decoration, .titulo a, .titulo-dos a, .terciarias a, .container-2 div a, .analisis-juegos a, .titulo-dos-noticias a, .container-4 div a, .container-5 div a, .container-6 div a, .analisis-texto__responsive a, .videos-texto-dos a, .trailers article a, .walkthrough div a, .esports article a, .generos a, .container-9 div a {
   text-decoration: none;
   list-style: none;
   color: white; }
@@ -54,6 +54,11 @@
   box-shadow: 0px 1px 10px rgba(201, 201, 201, 0.267); }
 
 .generosuno, .container-8 div {
+  border: 1px solid rgba(128, 128, 128, 0.527);
+  border-radius: 6px; }
+
+.generosdos, .container-9 div {
+  width: 503px;
   border: 1px solid rgba(128, 128, 128, 0.527);
   border-radius: 6px; }
 
@@ -148,9 +153,6 @@
   padding: 30px;
   background-color: black; }
   .titulo a {
-    text-decoration: none;
-    list-style: none;
-    color: white;
     font-size: 30px;
     display: inline-block;
     transition: transform 0.3s ease; }
@@ -690,6 +692,12 @@
   grid-auto-flow: row;
   grid-template-areas: "generos-1 generos-2 generos-3 generos-4" "generos-5 generos-6 generos-7 generos-8" "generos-9 generos-10 generos-11 generos-12";
   padding: 30px 250px 30px 250px; }
+  .container-8 div a {
+    display: inline-block;
+    transition: transform 0.3s ease; }
+    .container-8 div a:hover {
+      color: #e90f0fab;
+      transform: scale(1.1); }
 
 .generos-1 {
   grid-area: generos-1; }
@@ -739,66 +747,35 @@
   justify-items: center;
   background-color: black;
   padding: 30px 150px 30px 150px; }
-  .container-9 div a {
-    text-decoration: none;
-    list-style: none;
-    color: white; }
-    .container-9 div a p {
-      padding: 15px; }
+  .container-9 div a p {
+    padding: 15px; }
 
 .accion-1 {
-  grid-area: accion-1;
-  width: 503px;
-  border: 1px solid rgba(128, 128, 128, 0.527);
-  border-radius: 6px; }
+  grid-area: accion-1; }
 
 .accion-2 {
-  grid-area: accion-2;
-  width: 503px;
-  border: 1px solid rgba(128, 128, 128, 0.527);
-  border-radius: 6px; }
+  grid-area: accion-2; }
 
 .accion-3 {
-  grid-area: accion-3;
-  width: 503px;
-  border: 1px solid rgba(128, 128, 128, 0.527);
-  border-radius: 6px; }
+  grid-area: accion-3; }
 
 .accion-5 {
-  grid-area: accion-5;
-  width: 503px;
-  border: 1px solid rgba(128, 128, 128, 0.527);
-  border-radius: 6px; }
+  grid-area: accion-5; }
 
 .accion-4 {
-  grid-area: accion-4;
-  width: 503px;
-  border: 1px solid rgba(128, 128, 128, 0.527);
-  border-radius: 6px; }
+  grid-area: accion-4; }
 
 .accion-6 {
-  grid-area: accion-6;
-  width: 503px;
-  border: 1px solid rgba(128, 128, 128, 0.527);
-  border-radius: 6px; }
+  grid-area: accion-6; }
 
 .accion-7 {
-  grid-area: accion-7;
-  width: 503px;
-  border: 1px solid rgba(128, 128, 128, 0.527);
-  border-radius: 6px; }
+  grid-area: accion-7; }
 
 .accion-8 {
-  grid-area: accion-8;
-  width: 503px;
-  border: 1px solid rgba(128, 128, 128, 0.527);
-  border-radius: 6px; }
+  grid-area: accion-8; }
 
 .accion-9 {
-  grid-area: accion-9;
-  width: 503px;
-  border: 1px solid rgba(128, 128, 128, 0.527);
-  border-radius: 6px; }
+  grid-area: accion-9; }
 
 /*!-------html-contacto-texto-----*/
 .nosotros-somos {
@@ -1196,6 +1173,46 @@ input {
 @media (max-width: 650px) {
   .nosotros-somos {
     padding: 100px 30px 20px 30px; } }
+
+/*!-----------@mediaq---géneros------*/
+@media (max-width: 1800px) {
+  .container-9 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "accion-1 accion-2" "accion-3 accion-4" "accion-5 accion-6" "accion-7 accion-8" "accion-9 ."; } }
+
+@media (max-width: 1350px) {
+  .container-8 {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "generos-1 generos-2 generos-3" "generos-4 generos-5 generos-6" "generos-7 generos-8 generos-9" "generos-10 generos-11 generos-12";
+    padding: 15px 50px 15px 50px; }
+  .container-9 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+
+@media (max-width: 800px) {
+  .generos-texto p {
+    display: none; }
+  .container-8 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; } }
+
+@media (max-width: 650px) {
+  .generos-texto {
+    padding: 100px 30px 15px 30px; }
+  .container-9 div {
+    width: 375px; }
+    .container-9 div a img {
+      width: 375px; } }
+
+@media (max-width: 420px) {
+  .container-9 div {
+    width: 302px; }
+    .container-9 div a img {
+      width: 300px; } }
 
 .titulo-footer {
   color: white;
