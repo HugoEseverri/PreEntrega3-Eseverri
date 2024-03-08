@@ -1729,3 +1729,37 @@ input {
         }
     }
 }
+
+
+/*!-----------@mediaq---contacto------*/
+
+
+@media (max-width: 850px){
+    .nosotros-somos{
+        padding: 160px 30px 20px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1{
+            width: 100px;
+            text-align: center;
+        }
+        
+    }
+
+    .nosotros-somos-dos{
+        padding: 20px 30px 20px 30px;
+    }
+
+    .puntua{
+        padding: 20px 15px 20px 15px;
+
+    }
+}
+
+@media (max-width: 650px){
+    .nosotros-somos{
+        padding: 100px 30px 20px 30px;
+    }
+}
