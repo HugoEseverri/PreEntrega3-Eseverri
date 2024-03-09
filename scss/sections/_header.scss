@@ -24,66 +24,8 @@
     }
 }
 
-/*!-----@media---index-----*/
-
-@media (max-width: 1275px) {
-    .w-60 {
-        width: 850px;
-    }
-}
-
-@media (max-width: 900px) {
-    .w-60 {
-        width: 600px;
-    }
-
-    .carousel-item {
-
-        div {
-            h3 {
-                display: none;
-            }
-        }
-    }
-
-    .fs-5 {
-        font-size: 16px !important;
-    }
-}
-
 @media (max-width: 650px) {
-    .w-60 {
-        width: 500px;
-    }
-
     .medida-titulo {
         font-size: 30px;
-
-        h1 {
-            font-size: 30px;
-        }
     }
-    
-    .fs-5 {
-        margin-bottom: 0;
-    }
-    .carousel-caption{
-        padding-bottom: 5px;
-    }
-    .carousel-control-next-icon,
-    .carousel-control-prev-icon {
-        margin-top: 70px;
-    }
-}
-
-@media (max-width: 520px) {
-    .w-60 {
-        width: 340px;
-    }
-
-    .carousel-control-next-icon,
-    .carousel-control-prev-icon {
-        margin-top: 50px;
-    }
-
 }

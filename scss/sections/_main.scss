@@ -1122,6 +1122,72 @@ input {
 
 /*!-----@media---index-----*/
 
+@media (max-width: 1275px) {
+    .w-60 {
+        width: 850px;
+    }
+
+    .carousel-control-prev {
+        left: 15px;
+    }
+
+    .carousel-control-next {
+        right: 15px;
+    }
+}
+
+@media (max-width: 900px) {
+    .w-60 {
+        width: 600px;
+    }
+
+    .fs-5 {
+        font-size: 16px !important;
+    }
+
+    .vanish {
+        font-size: 16px !important;
+    }
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 650px) {
+    .w-60 {
+        width: 500px;
+    }
+
+    .vanish {
+        display: none;
+    }
+
+    .fs-5 {
+        margin-bottom: 0;
+    }
+
+    .carousel-caption {
+        padding-bottom: 5px;
+    }
+
+}
+
+@media (max-width: 520px) {
+    .w-60 {
+        width: 340px;
+    }
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        margin-top: 50px;
+    }
+
+}
+
+/*!-----@media---index-----*/
+
 
 @media (max-width: 1655px) {
     .container-1 {
@@ -1724,7 +1790,7 @@ input {
             width: 100px;
             text-align: center;
         }
-        
+
 
     }
 
@@ -1741,6 +1807,14 @@ input {
 @media (max-width: 650px) {
     .nosotros-somos {
         padding: 100px 30px 20px 30px;
+    }
+
+    .puntua {
+        div{
+            textarea{
+                width: 290px;
+            }
+        }
     }
 }
 

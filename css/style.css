@@ -111,40 +111,9 @@
   .custom-hover:hover {
     transform: scale(1.1); }
 
-/*!-----@media---index-----*/
-@media (max-width: 1275px) {
-  .w-60 {
-    width: 850px; } }
-
-@media (max-width: 900px) {
-  .w-60 {
-    width: 600px; }
-  .carousel-item div h3 {
-    display: none; }
-  .fs-5 {
-    font-size: 16px !important; } }
-
 @media (max-width: 650px) {
-  .w-60 {
-    width: 500px; }
   .medida-titulo {
-    font-size: 30px; }
-    .medida-titulo h1 {
-      font-size: 30px; }
-  .fs-5 {
-    margin-bottom: 0; }
-  .carousel-caption {
-    padding-bottom: 5px; }
-  .carousel-control-next-icon,
-  .carousel-control-prev-icon {
-    margin-top: 70px; } }
-
-@media (max-width: 520px) {
-  .w-60 {
-    width: 340px; }
-  .carousel-control-next-icon,
-  .carousel-control-prev-icon {
-    margin-top: 50px; } }
+    font-size: 30px; } }
 
 /*!-----------main-carousel----------*/
 .color-fondo-uno {
@@ -830,6 +799,43 @@ input {
     transform: scale(1.05); }
 
 /*!-----@media---index-----*/
+@media (max-width: 1275px) {
+  .w-60 {
+    width: 850px; }
+  .carousel-control-prev {
+    left: 15px; }
+  .carousel-control-next {
+    right: 15px; } }
+
+@media (max-width: 900px) {
+  .w-60 {
+    width: 600px; }
+  .fs-5 {
+    font-size: 16px !important; }
+  .vanish {
+    font-size: 16px !important; }
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    margin-top: 70px; } }
+
+@media (max-width: 650px) {
+  .w-60 {
+    width: 500px; }
+  .vanish {
+    display: none; }
+  .fs-5 {
+    margin-bottom: 0; }
+  .carousel-caption {
+    padding-bottom: 5px; } }
+
+@media (max-width: 520px) {
+  .w-60 {
+    width: 340px; }
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    margin-top: 50px; } }
+
+/*!-----@media---index-----*/
 @media (max-width: 1655px) {
   .container-1 {
     display: grid;
@@ -1177,7 +1183,9 @@ input {
 
 @media (max-width: 650px) {
   .nosotros-somos {
-    padding: 100px 30px 20px 30px; } }
+    padding: 100px 30px 20px 30px; }
+  .puntua div textarea {
+    width: 290px; } }
 
 /*!-----------@mediaq---géneros------*/
 @media (max-width: 1800px) {
