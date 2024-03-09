@@ -238,7 +238,6 @@
   grid-template-rows: 1fr 1fr;
   gap: 20px;
   grid-template-areas: "noticiarandom-1 noticiarandom-2 noticiarandom-3 noticiarandom-7" "noticiarandom-4 noticiarandom-5 noticiarandom-6 noticiarandom-8";
-  grid-auto-flow: row;
   justify-items: center;
   align-items: center;
   padding: 10px 100px 30px 100px; }
@@ -721,8 +720,10 @@
   justify-items: center;
   background-color: black;
   padding: 30px 150px 30px 150px; }
-  .container-9 div a p {
-    padding: 15px; }
+  .container-9 div {
+    overflow: hidden; }
+    .container-9 div a p {
+      padding: 15px; }
 
 .accion-1 {
   grid-area: accion-1; }
@@ -765,16 +766,14 @@
     animation-iteration-count: infinite; }
   .nosotros-somos p {
     color: white;
-    font-size: 20px;
-    text-align: justify; }
+    font-size: 20px; }
 
 .nosotros-somos-dos {
   background-color: #14141b;
   padding: 20px 200px 30px 200px; }
   .nosotros-somos-dos p {
     color: white;
-    font-size: 20px;
-    text-align: justify; }
+    font-size: 20px; }
   .nosotros-somos-dos h3 {
     color: white; }
 
@@ -798,7 +797,7 @@ input {
     color: #e90f0fab;
     transform: scale(1.05); }
 
-/*!-----@media---index-----*/
+/*!-----@media-carousel-index-----*/
 @media (max-width: 1275px) {
   .w-60 {
     width: 850px; }
@@ -838,12 +837,9 @@ input {
 /*!-----@media---index-----*/
 @media (max-width: 1655px) {
   .container-1 {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 20px;
     grid-template-areas: "noticia-1 noticia-2 noticia-3" "noticia-4 noticia-5 noticia-6" "noticia-7 noticia-7 noticia-7";
-    justify-items: center;
     align-items: center;
     padding: 0px 100px 100px 100px; }
   .videos {
@@ -851,38 +847,28 @@ input {
     flex-direction: column;
     align-items: center; }
   .container-2 {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 10px;
     grid-template-areas: "noticiarandom-1 noticiarandom-2 noticiarandom-3" "noticiarandom-4 noticiarandom-5 noticiarandom-6" "noticiarandom-7 noticiarandom-8 .";
     justify-content: center; }
   .container-3 {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 15px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "analisis-1 analisis-3" "analisis-5 analisis-4" "analisis-2 analisis-6" "analisis-7 analisis-8" "analisis-9 .";
-    justify-items: center; } }
+    grid-template-areas: "analisis-1 analisis-3" "analisis-5 analisis-4" "analisis-2 analisis-6" "analisis-7 analisis-8" "analisis-9 ."; } }
 
 @media (max-width: 1275px) {
   .container-1 {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 10px;
     grid-template-areas: "noticia-1 noticia-2" "noticia-3 noticia-4" "noticia-5 noticia-6" "noticia-7 noticia-7";
-    justify-items: center;
-    align-items: center;
-    padding: 0 100px 100px 100px; }
+    justify-items: center; }
   .container-2 {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 10px;
-    grid-template-areas: "noticiarandom-1 noticiarandom-2" "noticiarandom-3 noticiarandom-4" "noticiarandom-5 noticiarandom-6" "noticiarandom-7 noticiarandom-8";
-    justify-content: center; }
+    grid-template-areas: "noticiarandom-1 noticiarandom-2" "noticiarandom-3 noticiarandom-4" "noticiarandom-5 noticiarandom-6" "noticiarandom-7 noticiarandom-8"; }
   .analisis-juegos {
     padding: 0 10px 0 10px; } }
 
@@ -948,13 +934,11 @@ input {
 /*!-----------@mediaq---noticias------*/
 @media (max-width: 1720px) {
   .container-4 {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "noticiasp-1 noticiasp-2" "noticiasp-3 noticiasp-4" "noticiasp-5 noticiasp-6" "noticiasp-7 noticiasp-8" "noticiasp-9 noticiasp-10" "noticiasp-11 noticiasp-12";
     justify-items: center;
-    padding: 30px 90px 20px 90px;
-    background-color: #14141b; }
+    padding: 30px 90px 20px 90px; }
   .container-5 {
     padding: 0 100px 0 100px; }
   .container-6 {
@@ -1211,11 +1195,19 @@ input {
   .container-8 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start; } }
+    justify-content: center; }
+    .container-8 div a {
+      width: 120px;
+      height: 40px;
+      font-size: 1rem;
+      padding: 5px; } }
 
 @media (max-width: 650px) {
   .generos-texto {
     padding: 100px 30px 15px 30px; }
+  .container-8 div a {
+    width: 110px;
+    font-size: 13px; }
   .container-9 div {
     width: 375px; }
     .container-9 div a img {
@@ -1223,7 +1215,7 @@ input {
 
 @media (max-width: 420px) {
   .container-9 div {
-    width: 302px; }
+    width: 300px; }
     .container-9 div a img {
       width: 300px; } }
 
