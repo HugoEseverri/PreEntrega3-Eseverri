@@ -133,6 +133,8 @@
     .titulo a:hover {
       color: #e90f0fab;
       transform: scale(1.1); }
+    .titulo a h1 {
+      font-size: 30px; }
 
 .secundarias {
   background-image: linear-gradient(black, #0e0e0f);
@@ -642,7 +644,7 @@
 
 /*!-------html-géneros------*/
 .generos-texto {
-  background-color: #14141b;
+  background-image: linear-gradient(#1f1e1e, #14141b, #050505);
   padding: 160px 200px 30px 200px; }
   .generos-texto h1 {
     padding: 10px; }
@@ -651,7 +653,7 @@
     font-size: 20px; }
 
 .generos {
-  background-color: #14141b; }
+  background-image: linear-gradient(#050505, #14141b, #1f1e1e); }
   .generos a {
     font-size: 20px;
     padding: 15px; }
@@ -664,13 +666,13 @@
   gap: 20px 10px;
   grid-auto-flow: row;
   grid-template-areas: "generos-1 generos-2 generos-3 generos-4" "generos-5 generos-6 generos-7 generos-8" "generos-9 generos-10 generos-11 generos-12";
-  padding: 30px 250px 30px 250px; }
+  padding: 30px 250px 30px 250px;
+  transition: transform 0.3s ease; }
+  .container-8 div:hover {
+    background-color: #e90f0fab;
+    transform: scale(1.05); }
   .container-8 div a {
-    display: inline-block;
-    transition: transform 0.3s ease; }
-    .container-8 div a:hover {
-      color: #e90f0fab;
-      transform: scale(1.1); }
+    display: inline-block; }
 
 .generos-1 {
   grid-area: generos-1; }
@@ -708,6 +710,9 @@
 .generos-12 {
   grid-area: generos-12; }
 
+.titulo-generos {
+  background-image: linear-gradient(#1f1e1e, #14141b, #050505); }
+
 /*!-------géneros-ejemplo-selección-rol------*/
 .container-9 {
   display: grid;
@@ -718,7 +723,7 @@
   grid-auto-flow: row;
   grid-template-areas: "accion-1 accion-2 accion-3" "accion-4 accion-5 accion-6" "accion-7 accion-8 accion-9";
   justify-items: center;
-  background-color: black;
+  background-image: linear-gradient(#050505, #14141b, #1f1e1e);
   padding: 30px 150px 30px 150px; }
   .container-9 div {
     overflow: hidden; }
@@ -754,10 +759,9 @@
 
 /*!-------html-contacto-texto-----*/
 .nosotros-somos {
-  background-color: #14141b;
+  background-image: linear-gradient(#1f1e1e, #14141b, #050505);
   padding: 160px 200px 30px 200px; }
   .nosotros-somos h1 {
-    background-color: #14141b;
     padding: 15px;
     text-align: center;
     color: white;
@@ -768,18 +772,8 @@
     color: white;
     font-size: 20px; }
 
-.nosotros-somos-dos {
-  background-color: #14141b;
-  padding: 20px 200px 30px 200px; }
-  .nosotros-somos-dos p {
-    color: white;
-    font-size: 20px; }
-  .nosotros-somos-dos h3 {
-    color: white; }
-
-/*!------puntuación-----*/
 .puntua {
-  background-color: #14141b;
+  background-image: linear-gradient(#050505, #14141b, #1f1e1e);
   padding: 30px 200px 30px 200px; }
   .puntua div {
     color: white; }
@@ -796,6 +790,15 @@ input {
   input:focus {
     color: #e90f0fab;
     transform: scale(1.05); }
+
+.nosotros-somos-dos {
+  background-image: linear-gradient(#1f1e1e, #14141b, #050505);
+  padding: 20px 200px 30px 200px; }
+  .nosotros-somos-dos p {
+    color: white;
+    font-size: 20px; }
+  .nosotros-somos-dos h3 {
+    color: white; }
 
 /*!-----@media-carousel-index-----*/
 @media (max-width: 1275px) {
@@ -1049,6 +1052,7 @@ input {
 
 @media (max-width: 620px) {
   .contenedor div {
+    text-align: left;
     width: 400px; }
     .contenedor div img {
       width: 350px;
@@ -1195,7 +1199,8 @@ input {
   .container-8 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; }
+    justify-content: center;
+    padding: 0 0 20px 0; }
     .container-8 div a {
       width: 120px;
       height: 40px;

@@ -29,6 +29,10 @@
             color: $rojizo;
             transform: scale(1.1);
         }
+
+        h1 {
+            font-size: 30px;
+        }
     }
 }
 
@@ -882,7 +886,7 @@
 /*!-------html-géneros------*/
 
 .generos-texto {
-    background-color: $gris;
+    background-image: linear-gradient(rgb(31, 30, 30), $gris, $negro-carousel);
     padding: 160px 200px 30px 200px;
 
     h1 {
@@ -897,7 +901,7 @@
 }
 
 .generos {
-    background-color: $gris;
+    background-image: linear-gradient($negro-carousel, $gris, rgb(31, 30, 30));
 
     a {
         @extend .decoration;
@@ -918,19 +922,20 @@
         "generos-5 generos-6 generos-7 generos-8"
         "generos-9 generos-10 generos-11 generos-12";
     padding: 30px 250px 30px 250px;
+    transition: transform 0.3s ease;
 
     div {
         @extend .generosuno;
 
+        &:hover {
+            background-color: $rojizo;
+            transform: scale(1.05);
+        }
+
         a {
 
             display: inline-block;
-            transition: transform 0.3s ease;
 
-            &:hover {
-                color: $rojizo;
-                transform: scale(1.1);
-            }
         }
     }
 }
@@ -984,6 +989,10 @@
     grid-area: generos-12;
 }
 
+.titulo-generos {
+    background-image: linear-gradient(rgb(31, 30, 30), $gris, $negro-carousel);
+}
+
 /*!-------géneros-ejemplo-selección-rol------*/
 
 .container-9 {
@@ -998,7 +1007,7 @@
         "accion-4 accion-5 accion-6"
         "accion-7 accion-8 accion-9";
     justify-items: center;
-    background-color: black;
+    background-image: linear-gradient($negro-carousel, $gris, rgb(31, 30, 30));
     padding: 30px 150px 30px 150px;
 
     div {
@@ -1054,11 +1063,10 @@
 /*!-------html-contacto-texto-----*/
 
 .nosotros-somos {
-    background-color: $gris;
+    background-image: linear-gradient(rgb(31, 30, 30), $gris, $negro-carousel);
     padding: 160px 200px 30px 200px;
 
     h1 {
-        background-color: $gris;
         padding: 15px;
         text-align: center;
         color: white;
@@ -1074,24 +1082,8 @@
     }
 }
 
-.nosotros-somos-dos {
-    background-color: $gris;
-    padding: 20px 200px 30px 200px;
-
-    p {
-        color: white;
-        font-size: 20px;
-    }
-
-    h3 {
-        color: white;
-    }
-}
-
-/*!------puntuación-----*/
-
 .puntua {
-    background-color: $gris;
+    background-image: linear-gradient($negro-carousel, $gris, rgb(31, 30, 30));
     padding: 30px 200px 30px 200px;
 
     div {
@@ -1116,6 +1108,20 @@ input {
     &:focus {
         color: $rojizo;
         transform: scale(1.05);
+    }
+}
+
+.nosotros-somos-dos {
+    background-image: linear-gradient(rgb(31, 30, 30), $gris, $negro-carousel);
+    padding: 20px 200px 30px 200px;
+
+    p {
+        color: white;
+        font-size: 20px;
+    }
+
+    h3 {
+        color: white;
     }
 }
 
@@ -1560,7 +1566,9 @@ input {
 }
 
 @media (max-width: 620px) {
+
     .contenedor div {
+        text-align: left;
         width: 400px;
 
         img {
@@ -1861,6 +1869,7 @@ input {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        padding: 0 0 20px 0;
 
         div {
             a {
