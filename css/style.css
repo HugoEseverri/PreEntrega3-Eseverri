@@ -853,10 +853,14 @@ input {
 
 @media (max-width: 520px) {
   .w-60 {
-    width: 340px; }
+    width: 380px; }
   .carousel-control-next-icon,
   .carousel-control-prev-icon {
     margin-top: 50px; } }
+
+@media (max-width: 420px) {
+  .w-60 {
+    width: 340px; } }
 
 /*!-----@media---index-----*/
 @media (max-width: 1655px) {
