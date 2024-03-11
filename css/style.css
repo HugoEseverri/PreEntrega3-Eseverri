@@ -5,7 +5,7 @@
   padding: 0;
   font-family: poppins; }
 
-.decoration, .titulo a, .titulo-dos a, .terciarias a, .container-2 div a, .analisis-juegos a, .titulo-dos-noticias a, .container-4 div a, .container-5 div a, .container-6 div a, .analisis-texto__responsive a, .videos-texto-dos a, .trailers article a, .walkthrough div a, .esports article a, .generos a, .container-9 div a, .titulo-footer a {
+.decoration, .titulo a, .secundarias div a, .titulo-dos a, .videos article a, .terciarias a, .container-2 div a, .analisis-juegos a, .titulo-dos-noticias a, .container-4 div a, .container-5 div a, .container-6 div a, .analisis-texto__responsive a, .videos-texto-dos a, .trailers article a, .walkthrough div a, .esports article a, .generos a, .container-9 div a, .titulo-footer a {
   text-decoration: none;
   list-style: none;
   color: white; }
@@ -150,10 +150,6 @@
     padding: 10px; }
     .secundarias div img {
       width: 325px; }
-    .secundarias div a {
-      text-decoration: none;
-      list-style: none;
-      color: white; }
 
 .container-1 {
   display: grid;
@@ -228,9 +224,6 @@
     display: inline-block; }
     .videos article a {
       display: flex;
-      text-decoration: none;
-      list-style: none;
-      color: white;
       justify-content: center; }
       .videos article a:hover {
         color: #ffffff79; }
